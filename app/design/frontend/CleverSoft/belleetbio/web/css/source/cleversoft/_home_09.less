@@ -1,0 +1,52 @@
+
+/* Home 9 */
+.home9-banner {
+  h2,
+  h3,
+  .custom_heading {
+    line-height: 1;
+  }
+  .content_element {
+    margin-bottom: 0;
+    &.single_image {
+      margin-bottom: 27px;
+    }
+  }
+  .zoo_btn3-container {
+    margin-bottom: 0;
+      .zoo_btn3 {
+        display: inline-block;
+        border: 3px solid;
+        text-transform: uppercase;
+        height: 50px;
+        line-height: 44px;
+        font-weight: bold;
+        margin-top: 25px;
+        padding: 0 15px;
+        .abs-style( @btn-default__hover-border__color, @btn-default__hover-border__color, @btn-default__background-color);
+        &:hover {
+          .abs-style( @btn-default__hover__color, @btn-default__hover-border__color, @btn-default__hover_background-color);
+        }
+      }
+  }
+}
+.home9-banner-block {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .home9-banner {
+    margin-bottom: 150px;
+    &.home9-banner-first {
+      margin-top: 170px;
+    }
+  }
+}
+.single_image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+.cms-home-page-9{
+  .page-wrapper .footer-style2-layout .form#newsletter-validate-detail .field .form-control{
+    background: @color-white;
+  }
+}

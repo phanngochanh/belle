@@ -1,0 +1,741 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title>Main Menu</title>
+      <identifier>main_menu</identifier>
+      <content><![CDATA[<div>{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="main_menu"}}</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 01 - Image block</title>
+      <identifier>home01_image_block</identifier>
+      <content><![CDATA[<div class="row">
+   <div class="col-sm-4">
+      <div class="zoo-banner-image home-collection top-left">
+         <div class="banner-media banner-media-link">
+            <span class="zoo-addon-overlay"></span>
+            <img width="370" height="380" src="{{media url="wysiwyg/images/home01/banner/banner-01.jpg"}}" class="" alt="" >        
+         </div>
+         <div class="banner-content">
+            <div class="banner-content-inner" style="">
+               <div class="banner-description">
+                  <h3 class="h5">Leather<br>
+                     Bags
+                  </h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-banner-image home-collection top-left">
+         <div class="banner-media banner-media-link">
+            <span class="zoo-addon-overlay"></span>
+            <img width="370" height="380" src="{{media url="wysiwyg/images/home01/banner/banner-02.jpg"}}" class="" alt="" >        
+         </div>
+         <div class="banner-content">
+            <div class="banner-content-inner" style="">
+               <div class="banner-description">
+                  <h3 class="h5">Handmade<br>
+                     Watchs
+                  </h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-banner-image home-collection top-left">
+         <div class="banner-media banner-media-link">
+            <span class="zoo-addon-overlay"></span>
+            <img width="370" height="380" src="{{media url="wysiwyg/images/home01/banner/banner-03.jpg"}}" class="" alt="" >        
+         </div>
+         <div class="banner-content">
+            <div class="banner-content-inner" style="">
+               <div class="banner-description">
+                  <h3 class="h5">Wooden<br>
+                     Chair
+                  </h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 01 - Content Block</title>
+      <identifier>home01-contentblock</identifier>
+      <content><![CDATA[<div style="background: url({{media url='wysiwyg/images/bg-01.jpg'}}); padding: 30px 0;">
+<div class="container">
+<div class="row">
+   <div class="col-sm-4">
+      <div class="zoo-feature-box style-1 icon-type  before-style text-center">
+		   <div class="zoo-feature-box-inner">
+			  <div class="feature-box-media">
+				 <i class="circus-box cs-font clever-icon-truck" style="font-size: 30px"></i>
+			  </div>
+			  <h3 class="feature-box-title">
+				 Free shipping over $199                    
+			  </h3>
+			  <div class="feature-box-content">
+				 Free shipping with purchase over $199                    
+			  </div>
+		   </div>
+		</div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-feature-box style-1 icon-type  before-style text-center">
+		   <div class="zoo-feature-box-inner">
+			  <div class="feature-box-media">
+				 <i class="circus-box cs-font clever-icon-customer-reviews" style="font-size: 30px"></i>
+			  </div>
+			  <h3 class="feature-box-title">
+				 support 24/7, all the time                    
+			  </h3>
+			  <div class="feature-box-content">
+				 If you need help, Please call us now!                    
+			  </div>
+		   </div>
+		</div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-feature-box style-1 icon-type  before-style text-center">
+		   <div class="zoo-feature-box-inner">
+			  <div class="feature-box-media">
+				 <i class="circus-box cs-font clever-icon-reload" style="font-size: 30px"></i>
+			  </div>
+			  <h3 class="feature-box-title">
+				 warranty, refund policy                    
+			  </h3>
+			  <div class="feature-box-content">
+				 12 mounths warranty, refund in 30 days                    
+			  </div>
+		   </div>
+		</div>
+   </div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Instagram</title>
+      <identifier>Instagram</identifier>
+      <content><![CDATA[<h4 class="zoo-widget-title-sm">Instagram</h4>
+<div>{{widget type="CleverSoft\CleverInstagram\Block\Widget\Instagram" widgetedit="1" modetakeimg="userid" userid="176379829" accessToken="176379829.099273b.b32da11a694d4417ba7520970b441edd" openimg="instagram" layoutwg="grid" numberimage="6" img_resolution="thumbnail" sortby="random" imgwidth="115" customclass="null-instagram-feed"}}</div>
+<p class="instagram-clear"><a href="//instagram.com/aliceandtrixie/" target="_blank" rel="me">Follow Me!</a></p>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Newsletters</title>
+      <identifier>newsletters</identifier>
+      <content><![CDATA[<h4 class="zoo-widget-title-sm">Newsletter</h4>
+<div class="newsletters-style-3 text-center">{{block class="Magento\Newsletter\Block\Subscribe" name="subscribe" as="subscribe" before="-" template="signup.phtml"}}</div>
+{{block class="Magento\\Cms\\Block\\Block" block_id="follow_us"}}]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Latest News</title>
+      <identifier>latest-news</identifier>
+      <content><![CDATA[<div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Latest News" number_of_posts="3" image_width="100" image_height="70" category_id="1" custom_template="Magefan_Blog::widget/recent.phtml"}}</div> ]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Contact - Google Map</title>
+      <identifier>contact_google_map</identifier>
+      <content><![CDATA[<div class="zoo-widget-style1"><iframe style="border: 0px; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5133253018125!2d105.80814449999995!3d21.01213699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab602de9caab%3A0x2defdd20ba3f2eac!2zMTY5IE5ndXnhu4VuIE5n4buNYyBWxaksIFRydW5nIEhvw6AsIEPhuqd1IEdp4bqleQ!5e0!3m2!1svi!2s!4v1395192834951" width="auto" height="450" frameborder="0"></iframe></div>
+<div class="row zoo-widget-style1">
+   <div class="col-sm-4"> 
+		<div class="zoo-feature-box icon-type  left-style center contact-box">
+		   <div class="zoo-feature-box-inner">
+			  <div class="media">
+				 <div class="pull-left"> <span class="feature-box-media"> <i class="circus-box fa fa-map-marker" style="font-size: 48px"></i> </span></div>
+				 <div class="media-body">
+					<div class="feature-box-content"> 169 Nguyen Ngoc Vu – Cau Giay Ha Noi City</div>
+				 </div>
+			  </div>
+		   </div>
+		</div> 
+   </div>
+   <div class="col-sm-4"> 
+		<div class="zoo-feature-box icon-type  left-style center contact-box">
+		   <div class="zoo-feature-box-inner">
+			  <div class="media">
+				 <div class="pull-left"> <span class="feature-box-media"> <i class="circus-box fa fa-mobile" style="font-size: 48px"></i> </span></div>
+				 <div class="media-body">
+					<div class="feature-box-content">
+					   (+84) 123 456 789
+					   <p></p>
+					   <p>(+84) 091 168 6868</p>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div> 
+   </div>
+   <div class="col-sm-4"> 
+		<div class="zoo-feature-box icon-type  left-style center contact-box">
+		   <div class="zoo-feature-box-inner">
+			  <div class="media">
+				 <div class="pull-left"> <span class="feature-box-media"> <i class="circus-box fa fa-pencil-square-o" style="font-size: 48px"></i> </span></div>
+				 <div class="media-body">
+					<div class="feature-box-content">
+					   hello@company.co
+					   <p></p>
+					   <p>info@company.co</p>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div> 
+   </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Contact - Opening Hours</title>
+      <identifier>contact_opening_hours</identifier>
+      <content><![CDATA[<div class="block-row opening-hours">
+<h3>Opening Hours</h3>
+<ul class="working-hours">
+<li><span class="day">Monday:</span><br /> <span class="time">8.30 am &ndash; 17.00 pm</span></li>
+<li><span class="day">Tuesday:</span><br /> <span class="time">8.30 am &ndash; 17.00 pm</span></li>
+<li><span class="day">Wednesday:</span><br /> <span class="time">8.30 am &ndash; 17.00 pm</span></li>
+<li><span class="day">Thursday:</span><br /> <span class="time">8.30 am &ndash; 17.00 pm</span></li>
+<li><span class="day">Friday:</span><br /> <span class="time">8.30 am &ndash; 17.00 pm</span></li>
+<li><span class="day">Saturday:</span><br /> <span class="time">8.30 am &ndash; 17.00 pm</span></li>
+<li><span class="day">Sunday:</span><br /> <span class="time last">Closed</span></li>
+</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Follow Us</title>
+      <identifier>follow_us</identifier>
+      <content><![CDATA[<h4 class="zoo-widget-title-sm">Follow Us</h4>
+<ul class="zoo-footer-social-links style-4">
+<li><a class="fa fa-facebook" href="#">&zwj;</a></li>
+<li><a class="fa fa-twitter" href="#">&zwj;</a></li>
+<li><a class="fa fa-instagram" href="#">&zwj;</a></li>
+<li><a class="fa fa-google-plus" href="#">&zwj;</a></li>
+<li><a class="fa fa-rss" href="#">&zwj;</a></li>
+</ul>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 02 - Image block</title>
+      <identifier>home02_image_block</identifier>
+      <content><![CDATA[<div class="row box-style-2">
+   <div class="col-sm-6"> 
+            <div class="zoo-banner-image home-collection top-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="580" height="400" src="{{media url="wysiwyg/images/home02/banner/moza-banner-21.jpg"}}" class="attachment-full size-full" alt=""></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner">
+                     <div class="banner-description">
+                        <h3 class="h5">Leather<br> Bags</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="zoo-banner-image home-collection top-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="580" height="330" src="{{media url="wysiwyg/images/home02/banner/moza-banner-22.jpg"}}" class="attachment-full size-full" alt=""></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner">
+                     <div class="banner-description">
+                        <h3 class="h5">Wooden<br> Braclet</h3>
+                     </div>
+                  </div>
+               </div>
+            </div> 
+   </div>
+   <div class="col-sm-6"> 
+            <div class="zoo-banner-image home-collection top-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="580" height="330" src="{{media url="wysiwyg/images/home02/banner/moza-banner-23.jpg"}}" class="attachment-full size-full" alt=""></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner">
+                     <div class="banner-description">
+                        <h3 class="h5">Handmade<br> Watchs</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="zoo-banner-image home-collection top-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="580" height="400" src="{{media url="wysiwyg/images/home02/banner/moza-banner-24.jpg"}}" class="attachment-full size-full" alt=""></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner">
+                     <div class="banner-description">
+                        <h3 class="h5">Plaid<br> Sweater</h3>
+                     </div>
+                  </div>
+               </div>
+            </div> 
+   </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 02 - Image content</title>
+      <identifier>home02-imagecontent</identifier>
+      <content><![CDATA[<div class="container">
+<div class="row hero-block d-sm-flex">
+<div class="col-sm-6"><figure class="align_center"><img src="{{media url="wysiwyg/images/home02/banner/moza-banner-25.jpg"}}" /></figure>
+<div class="hero-price">
+<p>$19.99</p>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="hero-content">
+<h2 class="h1 mega-title">Highlights Of This Week</h2>
+<div class="mega-subtitle">
+<p>Chasing the blonde dragon is still a genuine plight, because the grass is always greener on the other side, i.e., the other end of the hair color spectrum. And while Sun-In may not be the answer &mdash; not even the fair-haired who are just out for some highlights</p>
+<p>There&rsquo;s a misguided notion that natural beauty products just don&rsquo;t do the job as well as conventional creams and cleansers. While that may be the case for some,</p>
+<p></p>
+</div>
+</div>
+<div><a class="btn btn-novetty" title="Shop now" href="#" target="_blank">Shop now</a></div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 03 - Image content</title>
+      <identifier>home03-imagecontent</identifier>
+      <content><![CDATA[<div class="row hero-block hero-style-2 d-sm-flex">
+<div class="col-sm-6">
+<div class="hero-content">
+<h2 class="h1 mega-title">Highlights Of This Week</h2>
+<div class="mega-subtitle">
+<p>Chasing the blonde dragon is still a genuine plight, because the grass is always greener on the other side, i.e. The other end of the hair color spectrum. And while Sun-In may not be the answer.</p>
+<p>There’s a misguided notion that natural beauty products just don’t do the job as well as conventional creams and cleansers.</p>
+<p></p>
+</div>
+</div>
+<div><a class="btn btn-novetty" title="Shop now" href="#" target="_blank">Shop now</a></div>
+</div>
+<div class="col-sm-6"><figure class="align_center"><img src="{{media url="wysiwyg/images/home03/banner/moza-banner-36.jpg"}}" /></figure>
+<div class="hero-price">
+<p>$19.99</p>
+</div>
+</div>
+</div> ]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 03 - Popular Products</title>
+      <identifier>home 03_popular_products</identifier>
+      <content><![CDATA[<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Popular Products" layout="grid" enable_fullwidth="1" widget_tab="none" mode="random" template="widget/product.phtml" category_ids="9" labels="10" limit="6" column_grid="3" product_grid_style="product_grid_style_4" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="visible" display_swatch_attributes="visible" display_productname="visible" display_price="visible" display_name_single_line="1" addtolinks_position="1" aspect_ratio="1" image_width="370" classes="zoo-widget-style2 zoo-title-center container"}}</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 04 - Content Block</title>
+      <identifier>home04-contentblock</identifier>
+      <content><![CDATA[<div class="row">
+   <div class="col-sm-4">
+      <div class="zoo-feature-box text-type  left-inline-style text-center">
+	   <div class="zoo-feature-box-inner">
+		  <div class="media">
+			 <div class="media-body">
+				<h3 class="feature-box-title"> Free Shipping Over $199</h3>
+			 </div>
+		  </div>
+		  <div class="feature-box-content"> Free shipping with purchase over $199</div>
+	   </div>
+	</div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-feature-box text-type  left-inline-style text-center">
+	   <div class="zoo-feature-box-inner">
+		  <div class="media">
+			 <div class="media-body">
+				<h3 class="feature-box-title"> Support 24/7, All The Time</h3>
+			 </div>
+		  </div>
+		  <div class="feature-box-content"> If you need help, Please call us now!</div>
+	   </div>
+	</div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-feature-box text-type  left-inline-style text-center">
+               <div class="zoo-feature-box-inner">
+                  <div class="media">
+                     <div class="media-body">
+                        <h3 class="feature-box-title"> Warranty, Refund Policy</h3>
+                     </div>
+                  </div>
+                  <div class="feature-box-content"> 12 mounths warranty, refund in 30 days</div>
+               </div>
+            </div>
+   </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 04 - Image Block</title>
+      <identifier>home04_image_block</identifier>
+      <content><![CDATA[<div class="row box-style-3">
+<div class="col-sm-3">
+<div class="zoo-banner-image bottom-center">
+<div class="banner-media"><a> <span class="zoo-addon-overlay"></span> <img src="{{media url='wysiwyg/images/home04/banner/banner-41.jpg'}}" alt="" width="280" height="410" /></a></div>
+<div class="banner-content">
+<div class="banner-content-inner" style="color: #ffffff; background-color: #dcc5bd;">
+<div class="banner-description">Real Men&rsquo;s<br /> Fashion</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="zoo-banner-image bottom-center">
+<div class="banner-media"><a> <span class="zoo-addon-overlay"></span> <img src="{{media url='wysiwyg/images/home04/banner/banner-42.jpg'}}" alt="" width="280" height="410" /></a></div>
+<div class="banner-content">
+<div class="banner-content-inner" style="color: #ffffff; background-color: #ffc9bc;">
+<div class="banner-description">Pink Girl<br /> Style</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="zoo-banner-image bottom-center">
+<div class="banner-media"><a> <span class="zoo-addon-overlay"></span> <img src="{{media url='wysiwyg/images/home04/banner/banner-43.jpg'}}" alt="" width="280" height="410" /></a></div>
+<div class="banner-content">
+<div class="banner-content-inner" style="color: #ffffff; background-color: #dbcbbb;">
+<div class="banner-description">Pilot Watch<br /> Men&rsquo;s</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="zoo-banner-image bottom-center">
+<div class="banner-media"><a> <span class="zoo-addon-overlay"></span> <img src="{{media url='wysiwyg/images/home04/banner/banner-44.jpg'}}" alt="" width="280" height="410" /></a></div>
+<div class="banner-content">
+<div class="banner-content-inner" style="color: #ffffff; background-color: #ead9a1;">
+<div class="banner-description">Accessories<br /> Fashion</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home05 Content Block</title>
+      <identifier>home05-contentblock</identifier>
+      <content><![CDATA[<div class="row">
+   <div class="col-sm-4">
+      <div class="zoo-feature-box icon-type  left-style text-center feature-box-style-2" style="">
+               <div class="zoo-feature-box-inner">
+                  <div class="media">
+                     <div class="pull-left"> <span class="feature-box-media" style="display: inline-block;"> <i class="cs-font clever-icon-truck" style="font-size: 18px"></i> </span></div>
+                     <div class="media-body">
+                        <div class="feature-box-content"> Free Shipping Over $199</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-feature-box icon-type  left-style text-center feature-box-style-2" style="">
+               <div class="zoo-feature-box-inner">
+                  <div class="media">
+                     <div class="pull-left"> <span class="feature-box-media" style="display: inline-block;"> <i class="cs-font clever-icon-customer-reviews" style="font-size: 18px"></i> </span></div>
+                     <div class="media-body">
+                        <div class="feature-box-content"> Support 24/7, All The Time</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   </div>
+   <div class="col-sm-4">
+      <div class="zoo-feature-box icon-type  left-style text-center feature-box-style-2" style="">
+               <div class="zoo-feature-box-inner">
+                  <div class="media">
+                     <div class="pull-left"> <span class="feature-box-media" style="display: inline-block;"> <i class=" cs-font clever-icon-reload" style="font-size: 18px"></i> </span></div>
+                     <div class="media-body">
+                        <div class="feature-box-content"> Warranty, Refund Policy</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 05 - Image Block</title>
+      <identifier>home05-imageblock</identifier>
+      <content><![CDATA[<div class="row box-style-4">
+   <div class="col-sm-6">
+      <div class="cvca-shortcode-banner zoo-banner-image bottom-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="570" height="670" src="{{media url='wysiwyg/images/home05/banner/banner-51.jpg'}}"></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner" style="">
+                     <div class="banner-description"> Real Men’s<br> Fashion</div>
+                  </div>
+               </div>
+            </div>
+   </div>
+   <div class="col-sm-6">
+      <div class="cvca-shortcode-banner zoo-banner-image bottom-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="570" height="330" src="{{media url='wysiwyg/images/home05/banner/banner-52.jpg'}}"></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner" style="">
+                     <div class="banner-description"> Summer<br> Accessories</div>
+                  </div>
+               </div>
+            </div>
+            <div class="cvca-shortcode-banner zoo-banner-image bottom-left">
+               <div class="banner-media banner-media-link"> <span class="zoo-addon-overlay"></span> <img width="570" height="330" src="{{media url='wysiwyg/images/home05/banner/banner-53.jpg'}}"></div>
+               <div class="banner-content">
+                  <div class="banner-content-inner" style="">
+                     <div class="banner-description"> Handmade<br> Headphones</div>
+                  </div>
+               </div>
+            </div>
+   </div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 03 - Best Seller</title>
+      <identifier>home03-best-seller</identifier>
+      <content><![CDATA[<div class="container">{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Best Seller" layout="carousel" enable_fullwidth="0" widget_tab="none" mode="random" template="widget/product.phtml" category_ids="9,8,7,6,5,4,3" labels="10" limit="6" col_480="1" col_768="2" col_992="3" column="4" navigation="1" navigation_prev="<i class='cs-font clever-icon-arrow-left-1'></i>" navigation_next="<i class='cs-font clever-icon-arrow-right-1'></i>" product_grid_style="product_grid_style_4" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="visible" display_swatch_attributes="visible" display_productname="visible" display_price="visible" display_name_single_line="1" addtolinks_position="1" aspect_ratio="1" image_width="270" classes="product-module-style-2"}}</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 06 - Image Content</title>
+      <identifier>home06-imagecontent</identifier>
+      <content><![CDATA[<div style="background-image: url({{media url='wysiwyg/images/about-bg.jpg'}}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+<div class="container about-info-block">
+<div class="row">
+<div class="col-sm-6"></div>
+<div class="col-sm-6" style="padding-top: 120px; padding-bottom: 70px;     padding-left: 48px;    padding-right: 48px; background-color: rgba(0,0,0,0.6);">
+<div class="zoo_text_column">
+<h3>About Moza Handmade Shop</h3>
+<div class="mega-subtitle">
+<p>We are Moza Shop, with 25 years of experience. We make handmade leather products, accessories, etc&hellip; If you want a new Color, Trending &amp; Unique for your style, please contact us. There are many new and unexpected things for you!</p>
+<p></p>
+<a class="btn btn-novetty"  href="#" target="_blank">Read more</a>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 08 - Image Block</title>
+      <identifier>home08_image_block1</identifier>
+      <content><![CDATA[<div class="row zoo-images-section">
+<div class="zoo-images style-1">
+<div class="zoo-images-block">
+<div class="zoo-images-content">
+<div class="zoo-images-content-wrap">
+<div class="zoo-images-content-inner"><span class="border"><span></span></span>
+<div class="zoo-images-info">
+<h5 class="subtitle">Moza’s Collection</h5>
+<h2 class="title"><span class="line">Beanie Hipster</span></h2>
+<p>Chromat is not a brand for wallflowers. Take a cursory glance at the website and you’ll see the American fashion label founded by Bec…</p>
+</div>
+<div class="button-link"><a class="zoo-media-link" title="View collection" href="{{store direct_url='shop.html'}}" target=" _blank">View collection</a></div>
+</div>
+</div>
+</div>
+<div class="grid grid-gutters">
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner81.jpg'}}" width="600" height="420" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner82.jpg'}}" width="430" height="600" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner83.jpg'}}" width="460" height="300" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row zoo-images-section">
+<div class="zoo-images style-2">
+<div class="zoo-images-block">
+<div class="zoo-images-content">
+<div class="zoo-images-content-wrap">
+<div class="zoo-images-content-inner"><span class="border"><span></span></span>
+<div class="zoo-images-info">
+<h5 class="subtitle">Moza’s Collection</h5>
+<h2 class="title"><span class="line">Scarf Women’s</span></h2>
+<p>Chromat is not a brand for wallflowers. Take a cursory glance at the website and you’ll see the American fashion label founded by Bec…</p>
+</div>
+<div class="button-link"><a class="zoo-media-link" title="View collection" href="{{store direct_url='shop.html'}}" target=" _blank">View collection</a></div>
+</div>
+</div>
+</div>
+<div class="grid grid-gutters">
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner84.jpg'}}" width="470" height="580" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner86.jpg'}}" width="200" height="200" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner85.jpg'}}" width="369" height="450" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row zoo-images-section">
+<div class="zoo-images style-3">
+<div class="zoo-images-block">
+<div class="zoo-images-content">
+<div class="zoo-images-content-wrap">
+<div class="zoo-images-content-inner"><span class="border"><span></span></span>
+<div class="zoo-images-info">
+<h5 class="subtitle">Moza’s Collection</h5>
+<h2 class="title"><span class="line">RealMen Women’s</span></h2>
+<p>Chromat is not a brand for wallflowers. Take a cursory glance at the website and you’ll see the American fashion label founded by Bec…</p>
+</div>
+<div class="button-link"><a class="zoo-media-link" title="View collection" href="{{store direct_url='shop.html'}}" target=" _blank">View collection</a></div>
+</div>
+</div>
+</div>
+<div class="grid grid-gutters">
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner87.jpg'}}" width="570" height="300" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner89.jpg'}}" width="470" height="580" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner88.jpg'}}" width="200" height="200" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row zoo-images-section">
+<div class="zoo-images style-4">
+<div class="zoo-images-block">
+<div class="zoo-images-content">
+<div class="zoo-images-content-wrap">
+<div class="zoo-images-content-inner"><span class="border"><span></span></span>
+<div class="zoo-images-info">
+<h5 class="subtitle">Moza’s Collection</h5>
+<h2 class="title"><span class="line">Summer Fashion</span></h2>
+<p>Chromat is not a brand for wallflowers. Take a cursory glance at the website and you’ll see the American fashion label founded by Bec…</p>
+</div>
+<div class="button-link"><a class="zoo-media-link" title="View collection" href="{{store direct_url='shop.html'}}" target=" _blank">View collection</a></div>
+</div>
+</div>
+</div>
+<div class="grid grid-gutters">
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner810.jpg'}}" width="470" height="580" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner812.jpg'}}" width="570" height="300" /></div>
+<div class="image-wrapper grid-item"><img src="{{media url='wysiwyg/images/home08/banner/banner811.jpg'}}" width="200" height="200" /></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Newsletters Style 2</title>
+      <identifier>newsletters-style-2</identifier>
+      <content><![CDATA[<div class="footer-style2-layout text-center">
+<h4 class="footer-widget-title">Get your stylish, Join now!</h4>
+Trust me, you want to do this
+<div class="newsletters-style-3">{{block class="Magento\Newsletter\Block\Subscribe" name="subscribe" as="subscribe" before="-" template="signup.phtml"}}</div>
+<p>{{block class="Magento\\Cms\\Block\\Block" block_id="follow_us_2"}}</p>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Follow US 2</title>
+      <identifier>follow_us_2</identifier>
+      <content><![CDATA[<ul class="zoo-footer-social-links style-6">
+<li><a class="fa fa-facebook" href="#">‍</a></li>
+<li><a class="fa fa-twitter" href="#">‍</a></li>
+<li><a class="fa fa-instagram" href="#">‍</a></li>
+<li><a class="fa fa-google-plus" href="#">‍</a></li>
+<li><a class="fa fa-rss" href="#">‍</a></li>
+</ul>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Home 09 - Image Block</title>
+      <identifier>home09_image_block</identifier>
+      <content><![CDATA[<div class="row home9-banner-block">
+<div class="col-sm-6">
+<div class="home9-banner text-center">
+<div class="single_image content_element"><figure class=" zoo_figure">
+<div class="zoo_single_image-wrapper   zoo_box_border_grey"><img src="{{media url='wysiwyg/images/home09/banner/banner-91.jpg'}}" width="500" height="390" /></div>
+</figure></div>
+<h2 class="zoo_custom_heading" style="font-size: 30px; text-align: center;">Beanie Hipster Collection</h2>
+<p>Unique scarf, wool sheep from England</p>
+<div class="zoo_btn3-container zoo_btn3-center"><a class="zoo_general zoo_btn3 zoo_btn3-size-md zoo_btn3-shape-square zoo_btn3-style-outline zoo_btn3-color-grey" title="" href="{{store direct_url='shop.html'}}">Shop collection</a></div>
+</div>
+<div class="home9-banner text-center">
+<div class="single_image content_element"><figure class=" zoo_figure">
+<div class="zoo_single_image-wrapper   zoo_box_border_grey"><img src="{{media url='wysiwyg/images/home09/banner/banner-92.jpg'}}" width="500" height="420" /></div>
+</figure></div>
+<h2 class="custom_heading" style="font-size: 30px; text-align: center;">Chronograph Watch Men</h2>
+<p>Anti-water, sapphire crystal, ETA movement</p>
+<div class="zoo_btn3-container zoo_btn3-center"><a class="zoo_general zoo_btn3 zoo_btn3-size-md zoo_btn3-shape-square zoo_btn3-style-outline zoo_btn3-color-grey" title="" href="{{store direct_url='shop.html'}}">Shop collection</a></div>
+</div>
+<div class="home9-banner text-center">
+<div class="single_image content_element"><figure class=" zoo_figure">
+<div class="zoo_single_image-wrapper   zoo_box_border_grey"><img src="{{media url='wysiwyg/images/home09/banner/banner-93.jpg'}}" width="500" height="550" /></div>
+</figure></div>
+<h2 class="custom_heading" style="font-size: 30px; text-align: center;">Beanie Hipster Collection</h2>
+<p>Unique scarf, wool sheep from England</p>
+<div class="zoo_btn3-container zoo_btn3-center"><a class="zoo_general zoo_btn3 zoo_btn3-size-md zoo_btn3-shape-square zoo_btn3-style-outline zoo_btn3-color-grey" title="" href="{{store direct_url='shop.html'}}">Shop collection</a></div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="home9-banner-first home9-banner text-center">
+<div class="single_image content_element"><figure class=" zoo_figure">
+<div class="zoo_single_image-wrapper   zoo_box_border_grey"><img src="{{media url='wysiwyg/images/home09/banner/banner-94.jpg'}}" width="500" height="550" /></div>
+</figure></div>
+<h2 class="custom_heading" style="font-size: 30px; text-align: center;">Hipster Men Fashion</h2>
+<p>Real &amp; Strong Men, this is special set</p>
+<div class="zoo_btn3-container zoo_btn3-center"><a class="zoo_general zoo_btn3 zoo_btn3-size-md zoo_btn3-shape-square zoo_btn3-style-outline zoo_btn3-color-grey" title="" href="{{store direct_url='shop.html'}}">Shop collection</a></div>
+</div>
+<div class="home9-banner text-center">
+<div class="single_image content_element"><figure class=" zoo_figure">
+<div class="zoo_single_image-wrapper   zoo_box_border_grey"><img src="{{media url='wysiwyg/images/home09/banner/banner-95.jpg'}}" width="500" height="600" /></div>
+</figure></div>
+<h2 class="custom_heading" style="font-size: 30px; text-align: center;">Canvas Converse Shoes</h2>
+<p>Rubber soles, canvas color trend summer 2017</p>
+<div class="zoo_btn3-container zoo_btn3-center"><a class="zoo_general zoo_btn3 zoo_btn3-size-md zoo_btn3-shape-square zoo_btn3-style-outline zoo_btn3-color-grey" title="" href="{{store direct_url='shop.html'}}">Shop collection</a></div>
+</div>
+<div class="home9-banner text-center">
+<div class="single_image content_element"><figure class=" zoo_figure">
+<div class="zoo_single_image-wrapper   zoo_box_border_grey"><img src="{{media url='wysiwyg/images/home09/banner/banner-96.jpg'}}" width="500" height="350" /></div>
+</figure></div>
+<h2 class="custom_heading" style="font-size: 30px; text-align: center;">Fashion Secret Girl</h2>
+<p>A secret girl, like to discover her?</p>
+<div class="zoo_btn3-container zoo_btn3-center"><a class="zoo_general zoo_btn3 zoo_btn3-size-md zoo_btn3-shape-square zoo_btn3-style-outline zoo_btn3-color-grey" title="" href="{{store direct_url='shop.html'}}">Shop collection</a></div>
+</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+    <cms_block>
+      <title>Shop with Instagram</title>
+      <identifier>shop-with-instagram</identifier>
+      <content><![CDATA[<h2 class="zoo-widget-title-sm">Shop with Instagram</h2>
+<p>New Style, New Color, Trending &amp; Unique for Fashion All product update in Instagram</p>
+<script class="snapppt-widget" src="https://snapppt.com/widgets/widget_loader/66d62275-6016-4fd0-84bb-50280f1d549a/grid.js" type="text/javascript" xml="space"></script> ]]></content>
+      <is_active>1</is_active>
+      <stores>0</stores>
+    </cms_block>
+  </blocks>
+</root>
