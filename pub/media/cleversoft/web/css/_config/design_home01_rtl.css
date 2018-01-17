@@ -38,7 +38,7 @@ button:hover, .button:hover {
   color:#ffffff;
   background-color:#ff8383;
 }
-.price-box .price { color:#f9bf3b; }
+.price-box .price { color:#ff8383; }
 .rating-summary .rating-result > span:before, .review-control-vote label:before { color:#dfac51; }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color:#26231f; }
 .page-header {
@@ -56,9 +56,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color:#26231f; }
 }
 .page-header .panel.wrapper .topbar-container {
   background-color:rgba(0,0,0,0);
-  padding-top:10px;
+  padding-top:11px;
   line-height:18px;
-  padding-bottom:10px;
+  padding-bottom:11px;
 }
 .page-header .panel.wrapper a { color:#26231f; }
 .page-header .panel.wrapper a:hover { color:#ff8383; }
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color:#26231f; }
 .top-menu { color:#26231f; }
 .clever-menu a { color:#26231f; }
 .clever-menu ul.clever-mega-menu > li.level-top > a, .clever-horizontal-menu .clever-mega-menu li.level0 > a.menu-link {
-  font-size:13px;
+  font-size:14px;
   text-transform:uppercase;
 }
 .clever-menu ul.clever-mega-menu > li.level-top > a:hover, .clever-horizontal-menu .clever-mega-menu li.level0 > a.menu-link:hover { color:#ff8383; }
