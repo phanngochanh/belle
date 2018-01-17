@@ -1,5 +1,54 @@
 
-
+#zoo_newsletter{
+  .zoo-popup-newsletter-top{
+    text-align: center;
+    padding: 100px 40px;
+    background: #26231f;
+    h2{
+      font-size: 38px;
+      color: #fff;
+      font-weight: 300;
+      line-height: 1.3;
+    }
+  }
+  .zoo-popup-newsletter-inner {
+    top: 0;
+    .abs-transform(initial){
+    h2 {
+      color: #3f3a35;
+      font-weight: 300;
+    }
+    h4{
+      font-size: 16px;
+      font-weight: 300;
+      strong{
+        font-weight: 500;
+      }
+    }
+    input[name=email] {
+      background: #ffffff;
+      height: 50px;
+      border: 1px solid #bcbbb9;
+      margin-top: 40px;
+      margin-bottom: 5px;
+      font-weight: 300;
+      font-size: 12px;
+      max-width: 510px;
+    }
+    button {
+      background: #ffffff;
+      border: 2px solid #26231f;
+      color: #26231f;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      &:hover{
+        background: #26231f;
+        color: #ffffff;
+      }
+    }
+  }
+}
 .zoo-title-style-flower {
   .zoo-main-heading {
     .zoo-heading-wrapper-title {
@@ -26,7 +75,24 @@
   }
 }
 
-
+.page-header .topbar-container {
+  label{
+    font-size: 14px;
+    margin: 0;
+    font-weight: normal;
+  }
+}
+#zoo-sticky-header {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+.clever-horizontal-menu ul.clever-mega-menu li.level0>a.menu-link {
+  position: relative;
+  font-weight: 400;
+  padding-top: 0;
+  line-height: 50px;
+  padding-bottom: 0;
+}
 @media(min-width:992px){
   .page-header .header-content{
     align-items:center
@@ -38,77 +104,7 @@
     border:1px solid #ebebeb;
     border-right:0
   }
-  .clever-menu.clever-horizontal-menu ul.clever-mega-menu>li.level-top.parent>a:before{
-    content:'' !important
-  }
-  .clever-horizontal-menu .clever-mega-menu li.level0>a.menu-link{
-    padding:0 10px;
-    line-height:50px
-  }
-  .clever-horizontal-menu .clever-mega-menu li.clever-mega-menu-item.level0.clever-menu-justify>.clever-mega-menu-sub{
-    width:100%
-  }
-  .clever-horizontal-menu .clever-mega-menu li.clever-mega-menu-item.level0.clever-menu-justify>.clever-mega-menu-sub .container{
-    background:#fff url("../images/icons/navigation-bg.jpg") no-repeat top right;
-    height:100px;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    align-content:flex-start
-  }
-  .clever-horizontal-menu .clever-mega-menu li.level0>a.menu-link{
-    text-transform:uppercase
-  }
-  .clever-menu .category-menu li.item{
-    margin:0;
-    padding:6px 15px;
-    min-width:0
-  }
 }
-.cms-index-index #zoo-sticky-header,#zoo-sticky-header{
-  border-top:1px solid #e2e2e2;
-  border-bottom:1px solid #e2e2e2
-}
-#zoo-sticky-header-sticky-wrapper{
-  position:relative
-}
-.secondary-menu .clever-horizontal-menu .clever-mega-menu li.magazine-menu-item>a.menu-link,.secondary-menu .clever-horizontal-menu .clever-mega-menu li.diagnostic-menu-item>a.menu-link{
-  color:#a3a3a3;
-  text-transform:capitalize;
-  font-weight:400;
-  font-size:16px
-}
-.secondary-menu .clever-horizontal-menu .clever-mega-menu li.magazine-menu-item>a.menu-link:before,.secondary-menu .clever-horizontal-menu .clever-mega-menu li.diagnostic-menu-item>a.menu-link:before{
-  content:"";
-  background:transparent url("../images/icons/magazine.png") no-repeat center center;
-  display:inline-block;
-  width:40px;
-  height:40px;
-  background-size:contain;
-  vertical-align:middle
-}
-.secondary-menu .clever-horizontal-menu .clever-mega-menu li.diagnostic-menu-item>a.menu-link{
-  margin-left:0;
-  margin-right:0;
-  padding-left:0;
-  padding-right:0
-}
-.secondary-menu .clever-horizontal-menu .clever-mega-menu li.diagnostic-menu-item>a.menu-link:before{
-  content:"";
-  background:transparent url("../images/icons/diagnostic.png") no-repeat center center;
-  display:inline-block;
-  width:40px;
-  height:40px;
-  background-size:contain;
-  vertical-align:middle
-}
-.zoo-menu-content{
-  position:initial
-}
-.top-menu{
-  position:relative
-}
-
 
 
 .page-wrapper {
