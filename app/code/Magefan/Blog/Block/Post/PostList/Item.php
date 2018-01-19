@@ -7,11 +7,15 @@
  */
 
 namespace Magefan\Blog\Block\Post\PostList;
-
 /**
  * Post list item
  */
 class Item extends \Magefan\Blog\Block\Post\AbstractPost
 {
-
+    public function getConfigImage($config_path)
+    {
+        return (int) $this->_scopeConfig->getValue(
+            $config_path, \Magento\Store\Model\ScopeInterface::SCOPE_STORE
+        );
+    }
 }
