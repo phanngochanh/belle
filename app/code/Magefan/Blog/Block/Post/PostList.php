@@ -44,9 +44,9 @@ class PostList extends \Magefan\Blog\Block\Post\PostList\AbstractList
      * @param  \Magefan\Blog\Model\Post $post
      * @return string
      */
-    public function getPostHtml($post)
+    public function getPostHtml($post,$ind)
     {
-        return $this->getChildBlock('blog.posts.list.item')->setPost($post)->toHtml();
+        return $this->getChildBlock('blog.posts.list.item')->setIndex($ind)->setPost($post)->toHtml();
     }
 
     /**
