@@ -390,4 +390,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
         }
         return false;
     }
+
+    public function getMediaUrl($addPath = ''){
+        return $this->_urlBuilder
+            ->getBaseUrl(['_type' => \Magento\Framework\UrlInterface::URL_TYPE_MEDIA]).$addPath;
+    }
 }

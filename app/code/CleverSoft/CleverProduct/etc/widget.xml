@@ -67,6 +67,34 @@
                 <description translate="true">Enable countdown on product if available</description>
 
             </parameter>
+
+            <parameter name="countdown_label" xsi:type="text"  visible="true" >
+                <label translate="true">Countdown Label </label>
+                <description translate="true">Countdown Label </description>
+                <depends>
+                    <parameter name="countdown" value="1" />
+                </depends>
+                <value>Hurry up!! This offer expires in : </value>
+            </parameter>
+
+            <parameter name="countdown_position" xsi:type="select" required="true" visible="true"
+                       source_model="CleverSoft\CleverProduct\Model\Widget\Source\CountdownPosition">
+                <label translate="true">Countdown Position </label>
+                <description>Countdown Position.</description>
+                <depends>
+                    <parameter name="countdown" value="1" />
+                </depends>
+            </parameter>
+
+            <parameter name="enable_progress_bar" xsi:type="select" required="true" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Progress Bar </label>
+                <description>Show Progress Bar - How many sold and available.</description>
+                <depends>
+                    <parameter name="countdown" value="1" />
+                </depends>
+            </parameter>
+
             <parameter name="product_ids" xsi:type="conditions" class="CleverSoft\CleverProduct\Block\Adminhtml\Widget\Renderer\Product" required="true" visible="true">
                 <label translate="true">Product</label>
                 <description>Specific product ids here</description>

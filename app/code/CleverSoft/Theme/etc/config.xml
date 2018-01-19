@@ -120,5 +120,10 @@
                 <control_robots>1</control_robots>
             </robots>
         </clevershopby>
+        <cleverdeferjs>
+            <general>
+                <enable>1</enable>
+            </general>
+        </cleverdeferjs>
     </default>
 </config>

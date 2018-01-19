@@ -87,6 +87,16 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
      */
     protected $_localeDate;
 
+    /*
+     *
+     */
+    protected $stockState;
+
+    /*
+     *
+     */
+    protected $soldCollection;
+
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory,
@@ -99,7 +109,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
         \Magento\Checkout\Model\Session $checkoutSession,
         \Magento\Framework\ObjectManagerInterface $objectManager,
         \Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate,
-        CustomerSession $customerSession
+        CustomerSession $customerSession,
+        \Magento\CatalogInventory\Model\StockState $stockState,
+        \Magento\Reports\Model\ResourceModel\Product\Sold\Collection $soldCollection
     ) {
         $this->_resource = $resource;
         $this->_customerSession = $customerSession;
@@ -112,6 +124,8 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
         $this->_objectManager = $objectManager;
         $this->_localeDate = $localeDate;
         $this->viewedModel = $viewedModel;
+        $this->stockState = $stockState;
+        $this->soldCollection = $soldCollection;
         parent::__construct($context);
     }
 
@@ -222,11 +236,11 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
             $collection->addAttributeToFilter('special_from_date', array('date' => true, 'to' => $todayDate))
                 ->addAttributeToFilter('special_price',array('is' => new \Zend_Db_Expr('not null')))
                 ->addAttributeToFilter('special_to_date', array('or'=> array(
-                    0 => array('date' => true, 'from' => $tomorrowDate),
-                    1 => array('is' => new \Zend_Db_Expr('not null')))
+                    0 => array('date' => true, 'from' => $tomorrowDate))
                 ), 'left');
         }
         $collection->distinct(true);
+        $collection->groupByAttribute('entity_id');
         return $collection;
     }
 
@@ -663,5 +677,22 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
         $cutUrl = substr($cUrl,$iPosition);
 
         return $rUrl.$cutUrl;
+    }
+
+    /*
+     * get stock quatity
+     */
+    public function getStockQty($productId){
+        return $this->stockState->getStockQty($productId);
+    }
+    /*
+     *get ordered qty
+     */
+    public function getOrderedQuantity($productId){
+        $ordQty = $this->soldCollection->addOrderedQty()
+            ->addFieldToFilter('product_id',$productId)
+            ->setOrder('ordered_qty', 'desc')
+            ->getFirstItem();
+        return intval($ordQty->getOrderedQty());
     }
 }

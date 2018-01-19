@@ -11,7 +11,7 @@ $full_header_width = $block->getData('full_header_width');
 $compareHeader = $block->getData('compare');
 $wishlistHeader = $block->getData('wishlist');
 $sticky_logo = $block->getConfig('cleversoftbase/header/sticky_logo');
-$logoSrc = $this->getUrl('pub/media/wysiwyg/cleversoft/logo/', ['_secure' => $this->getRequest()->isSecure(),'_type'=>\Magento\Framework\UrlInterface::URL_TYPE_WEB]).$sticky_logo;
+$logoSrc = $block->getMediaUrl() . 'wysiwyg/cleversoft/logo/' . $sticky_logo;
 ?>
 
 <div class="panel wrapper">

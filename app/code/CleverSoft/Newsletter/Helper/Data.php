@@ -38,4 +38,8 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
     {
         return $this->scopeConfig->getValue('clevernewsletter/display_options/intro');
     }
+    public function getMediaUrl($addPath = ''){
+        return $this->_urlBuilder
+            ->getBaseUrl(['_type' => \Magento\Framework\UrlInterface::URL_TYPE_MEDIA]).$addPath;
+    }
 }

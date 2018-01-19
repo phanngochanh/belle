@@ -70,14 +70,14 @@ $ranId = $block->getRandom()->getUniqueHash('categories');
             });
 
             if(jQuery('select[name="parameters[layout]"]').val() == 'list' || jQuery('select[name="parameters[layout]"]').val() == 'carousel-vertical') {
-                jQuery('select[name="parameters[product_grid_style]"], select[name="parameters[display_rating]"],select[name="parameters[display_addtocart]"],select[name="parameters[display_addtowishlist]"],select[name="parameters[display_addtocompare]"],select[name="parameters[display_swatch_attributes]"],select[name="parameters[display_productname]"],select[name="parameters[display_name_single_line]"],select[name="parameters[display_price]"]"]').parent().parent().hide();
+                jQuery('select[name="parameters[product_grid_style]"], select[name="parameters[display_rating]"],select[name="parameters[display_addtocart]"],select[name="parameters[display_addtowishlist]"],select[name="parameters[display_addtocompare]"],select[name="parameters[display_swatch_attributes]"],select[name="parameters[display_productname]"],select[name="parameters[display_name_single_line]"],select[name="parameters[display_price]"]').parent().parent().hide();
             }
 
             jQuery('select[name="parameters[layout]"]').on('change',function(){
                 if(jQuery(this).val() == 'list' || jQuery(this).val() == 'carousel-vertical') {
-                    jQuery('select[name="parameters[product_grid_style]"], select[name="parameters[display_rating]"],select[name="parameters[display_addtocart]"],select[name="parameters[display_addtowishlist]"],select[name="parameters[display_addtocompare]"],select[name="parameters[display_swatch_attributes]"],select[name="parameters[display_productname]"],select[name="parameters[display_name_single_line]"],select[name="parameters[display_price]"]"]').parent().parent().hide();
+                    jQuery('select[name="parameters[product_grid_style]"], select[name="parameters[display_rating]"],select[name="parameters[display_addtocart]"],select[name="parameters[display_addtowishlist]"],select[name="parameters[display_addtocompare]"],select[name="parameters[display_swatch_attributes]"],select[name="parameters[display_productname]"],select[name="parameters[display_name_single_line]"],select[name="parameters[display_price]"]').parent().parent().hide();
                 } else {
-                    jQuery('select[name="parameters[product_grid_style]"], select[name="parameters[display_rating]"],select[name="parameters[display_addtocart]"],select[name="parameters[display_addtowishlist]"],select[name="parameters[display_addtocompare]"],select[name="parameters[display_swatch_attributes]"],select[name="parameters[display_productname]"],select[name="parameters[display_name_single_line]"],select[name="parameters[display_price]"]"]').parent().parent().show();
+                    jQuery('select[name="parameters[product_grid_style]"], select[name="parameters[display_rating]"],select[name="parameters[display_addtocart]"],select[name="parameters[display_addtowishlist]"],select[name="parameters[display_addtocompare]"],select[name="parameters[display_swatch_attributes]"],select[name="parameters[display_productname]"],select[name="parameters[display_name_single_line]"],select[name="parameters[display_price]"]').parent().parent().show();
                 }
             });
 

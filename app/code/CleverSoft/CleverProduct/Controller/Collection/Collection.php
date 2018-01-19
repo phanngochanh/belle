@@ -76,7 +76,11 @@ class Collection extends \Magento\Framework\App\Action\Action{
         $display_productname    = $this->getRequest()->getPost('display_productname')? $this->getRequest()->getPost('display_productname') : 'visible';
         $display_name_single_line    = $this->getRequest()->getPost('display_name_single_line',true);
         $display_price    = $this->getRequest()->getPost('display_price')? $this->getRequest()->getPost('display_price') : 'visible';
-        $countdown    = $this->getRequest()->getPost('countdown'); 
+        $countdown    = $this->getRequest()->getPost('countdown');
+        $enable_countdown    = $this->getRequest()->getPost('enable_countdown');
+        $countdown_position    = $this->getRequest()->getPost('countdown_position');
+        $enable_progress_bar    = $this->getRequest()->getPost('enable_progress_bar');
+        $countdown_label    = $this->getRequest()->getPost('countdown_label');
 
         /* @var $block CleverProduct_Block_Widget_Collection */
         $block = $this->layout->createBlock('CleverSoft\CleverProduct\Block\Widget\Collection');
@@ -123,6 +127,10 @@ class Collection extends \Magento\Framework\App\Action\Action{
             'display_addtocart'      => $display_addtocart,
             'display_rating'      => $display_rating,
             'countdown'      => $countdown,
+            'enable_countdown'      => $enable_countdown,
+            'enable_progress_bar'      => $enable_progress_bar,
+            'countdown_position'      => $countdown_position,
+            'countdown_label'      => $countdown_label,
             'collection'    => $this->_helperData->getProducts($type, $value, $params, $limit)
         ));
 

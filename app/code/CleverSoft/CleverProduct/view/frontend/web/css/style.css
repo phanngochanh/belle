@@ -35,3 +35,14 @@
 }
 .product-items .owl-nav [class*=owl-] a.flex-prev:before { content: "\c024";}
 .product-items .owl-nav [class*=owl-] a.flex-next:before { content: "\c034";}
+.clever-countdown-progress-bar {
+    height: 15px;
+    border-radius: 15px;
+    background: #ebebeb;
+}
+
+.available-sold {
+    background: #f2453d;
+    height: 100%;
+    border-radius: 15px;
+}

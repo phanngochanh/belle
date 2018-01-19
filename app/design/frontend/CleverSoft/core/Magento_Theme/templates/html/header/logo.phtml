@@ -11,11 +11,11 @@ $theme = $this->helper('CleverSoft\Base\Helper\Data');
 $cfgstore = $theme->getCfg('header');
 if ($cfgstore['logo_upload']) {
     $logo = $cfgstore['logo_upload'];
-    $logo_url = $this->getUrl('pub/media/wysiwyg/cleversoft/logo/', ['_secure' => $this->getRequest()->isSecure(),'_type'=>\Magento\Framework\UrlInterface::URL_TYPE_WEB]).$logo;
+    $logo_url = $theme->getMediaUrl('wysiwyg/cleversoft/logo/') . $logo;
 }
 if ($cfgstore['logo_retina_upload']) {
     $retine_logo = $cfgstore['logo_retina_upload'];
-    $retine_logo_url = $this->getUrl('pub/media/wysiwyg/cleversoft/logo/', ['_secure' => $this->getRequest()->isSecure(),'_type'=>\Magento\Framework\UrlInterface::URL_TYPE_WEB]).$retine_logo;
+    $retine_logo_url = $theme->getMediaUrl('wysiwyg/cleversoft/logo/') . $retine_logo;
 }
 ?>
 

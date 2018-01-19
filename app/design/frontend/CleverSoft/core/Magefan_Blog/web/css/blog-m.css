@@ -66,6 +66,8 @@
 .post-view .post-holder .post-header .addthis_toolbox {float: right;}
 .post-view .post-bottom {margin-top:30px;}
 
+.post-view .post-bottom .next-link{float: right;}
+
 .post-view .block {margin-bottom: 30px;}
 
 .widget.block-recent-posts .block-content .item {

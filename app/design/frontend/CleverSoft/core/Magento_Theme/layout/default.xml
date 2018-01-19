@@ -131,7 +131,7 @@
 							<container name="footer.top.2" label="Footer Top 2"/>
 						</container>
             </container>
-            <container htmlClass="main_bottom" htmlTag="div" before="main.aside">
+            <container htmlClass="main_bottom" htmlTag="div" after="main.aside">
                 <container htmlTag="div" htmlClass="container">
                     <container htmlTag="div" htmlClass="row">
                         <container name="content.bottom" label="Main Content Bottom"/>
@@ -139,7 +139,7 @@
                 </container>
             </container>
             <container name="inner.bottom" label="Main Content Inner Bottom"
-                       before="main.aside.detail" htmlTag="div" htmlClass="main_innerbottom"/>
+                       after="main.aside.detail" htmlTag="div" htmlClass="main_innerbottom"/>
             <container name="page.bottom.container" as="page_bottom_container" label="Before Page Footer Container"
                        after="main.content" htmlTag="div" htmlClass="page-bottom"/>
             <container name="inner.top" label="Main Content Inner Top"

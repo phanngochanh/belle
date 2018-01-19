@@ -12,6 +12,7 @@ use Magento\Framework\App\Action\Action;
 /* @var $this CleverSoft CleverProduct_Block_Widget */
 
 $theme = $this->helper('CleverSoft\Base\Helper\Data');
+$dataHelpder = $this->helper('CleverSoft\CleverProduct\Helper\Data');
 $_id = $block->getConfig('id') ? $block->getConfig('id') : $block->getData('id');
 $full_w = $block->getConfig('enable_fullwidth') ? $block->getConfig('enable_fullwidth') : $block->getData('enable_fullwidth');
 $rtl_language = $theme->getCfg('responsive/rtl_language');
@@ -19,6 +20,10 @@ $_title = $block->getData('widget_title') ? $block->getData('widget_title') : $b
 $_sub_title = $block->getData('widget_sub_title') ? $block->getData('widget_sub_title') : $block->getConfig('widget_sub_title');
 $t = microtime();
 $tab = $block->getData('tab');
+//get configurations for countdown area
+$countdown_label = $block->getData('countdown_label');
+$countdown_position = $block->getData('countdown_position'); /// over feature image or in product metadata.
+$enable_progress_bar = $block->getData('enable_progress_bar');
 //Get icon lazy load
 if ($theme->getCfg('category_grid/equal_height')) {
     $equalHeight = 'true';
@@ -112,6 +117,11 @@ if (!empty($icon)) {
             <div class="block-content">
                 <?php $i = 0;
                 foreach ($items as $_item): ?>
+                    <?php
+                    //this is how we get the data for showing progress bar
+                    $stock = $dataHelpder->getStockQty($_item->getID()); /// available amount
+                    $order = $dataHelpder->getOrderedQuantity($_item->getID());//sold amount
+                    ?>
                     <?php if ($carousel == 1 && $row > 1 && $i == 0): ?>
                         <div class="owl-carousel">
                     <?php endif ?>
@@ -251,7 +261,25 @@ if (!empty($icon)) {
                                         </div>
                                     <?php endif; ?>
                                 <?php endif; ?>
-                                <div class="product-date"  data-date="<?php echo $this->helper('CleverSoft\CleverProduct\Helper\Data')->getDate($_item) ?>"></div>
+                                <?php if($block->getData('enable_countdown')) : ?>
+                                    <?php if($countdown_position == 'over_feature_img' ) : ?>
+                                    <div class="clever-countdown <?php echo $countdown_position; ?>">
+                                        <?php if($enable_progress_bar) : ?>
+                                            <div class="clever-countdown-progress-bar" >
+                                                <div class="available-sold" style="width: <?php echo (100 - (($order/($order+$stock)))*100) ?>%"></div>
+                                            </div>
+                                            <div class="clever-countdown-amount">
+                                                <span class="clever-countdown-available-amount ">Sold: <span><?php echo ($stock + $order); ?></span></span>
+                                                <span class="clever-countdown-ordered-amount ">Available: <?php echo $stock; ?></span>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if(!empty($countdown_label)) {  ?>
+                                            <div class="clever-countdown-label"><?php echo $countdown_label; ?></div>
+                                        <?php } ?>
+                                        <div class="product-date"  data-date="<?php echo $this->helper('CleverSoft\CleverProduct\Helper\Data')->getDate($_item) ?>"></div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php endif; ?>
                                 <?php if ($product_grid_style == 'product_grid_style_5'): ?>
                                     <div class="add-to-cart-button">
                                         <?php if ($showCart != 'remove'): ?>
@@ -400,7 +428,25 @@ if (!empty($icon)) {
                                         <?php endif; ?>
                                     <?php endif; ?>
                                 </div>
-
+                                <?php if($block->getData('enable_countdown')) : ?>
+                                    <?php if($countdown_position == 'product_metadata' ) : ?>
+                                    <div class="clever-countdown <?php echo $countdown_position; ?>">
+                                        <?php if($enable_progress_bar) : ?>
+                                            <div class="clever-countdown-progress-bar" >
+                                                <div class="available-sold" style="width: <?php echo (100 - (($order/($order+$stock)))*100) ?>%"></div>
+                                            </div>
+                                            <div class="clever-countdown-amount">
+                                                <span class="clever-countdown-available-amount ">Sold: <span><?php echo ($stock + $order); ?></span></span>
+                                                <span class="clever-countdown-ordered-amount ">Available: <?php echo $stock; ?></span>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if(!empty($countdown_label)) {  ?>
+                                            <div class="clever-countdown-label"><?php echo $countdown_label; ?></div>
+                                        <?php } ?>
+                                        <div class="product-date"  data-date="<?php echo $this->helper('CleverSoft\CleverProduct\Helper\Data')->getDate($_item) ?>"></div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php endif; ?>
                                 <?php if ($product_grid_style == 'product_grid_style_1'):?>
                                     <?php if ($templateType && $showRating != 'remove'): ?>
                                         <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>

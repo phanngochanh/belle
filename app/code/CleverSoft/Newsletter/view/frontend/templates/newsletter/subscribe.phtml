@@ -26,7 +26,7 @@ $routeName = $block->getRequest()->getRouteName();
             <?php if($backgroundImage){?>
                 <style>
                     .zoo-logo-newsletter {
-                        background-image: url(<?php echo $this->getUrl('pub/media/wysiwyg/cleversoft/newsletter/', ['_secure' => $this->getRequest()->isSecure()]).$backgroundImage;?>);
+                        background-image: url(<?php echo $helper->getMediaUrl('wysiwyg/cleversoft/newsletter/').$backgroundImage; ?>);
                         background-repeat: no-repeat;
                         height: 100%;
                         background-size: cover;
