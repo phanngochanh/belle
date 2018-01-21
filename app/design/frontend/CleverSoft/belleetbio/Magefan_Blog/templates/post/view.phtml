@@ -22,23 +22,22 @@
     <div class="post-holder-<?php echo $_post->getId() ?>">
 
         <div class="post-content">
-            <div class="post-ftimg" style="background: #cccccc url('<?php echo $_post->getFeaturedImage() ?>')  center center / cover no-repeat;">
-                <div class="post-date-title <?php if ($_post->getFeaturedImage()) echo 'post-ftimg-info' ?>">
-                    <?php echo $this->getLayout()->createBlock('Magento\Theme\Block\Html\Title')->setTemplate('html/title.phtml')->toHtml(); ?>
-                    <?php echo $this->getInfoHtml() ?>
-                </div>
+            <div class="post-date-title">
+                <?php echo $this->getLayout()->createBlock('Magento\Theme\Block\Html\Title')->setTemplate('html/title.phtml')->toHtml(); ?>
+                <?php echo $this->getInfoHtml() ?>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <?php echo $block->getContent() ?>
-                    <div class="addthis_toolbox  pull-right" addthis:url="<?php echo $_postUrl ?>">
-                        <strong><?php echo __('Share: ') ?></strong>
-                        <a class="addthis_button_facebook"></a>
-                        <a class="addthis_button_twitter"></a>
-                        <a class="addthis_button_email"></a>
-                        <a class="addthis_button_compact"></a>
-                    </div>
+            <?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+                <div class="post-ftimg-hld">
+                    <img src="<?php echo $featuredImage ?>" alt="<?php echo $_postName ?>" />
                 </div>
+            <?php } ?>
+            <?php echo $block->getContent() ?>
+            <div class="addthis_toolbox  pull-right" addthis:url="<?php echo $_postUrl ?>">
+                <strong><?php echo __('Share: ') ?></strong>
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter"></a>
+                <a class="addthis_button_email"></a>
+                <a class="addthis_button_compact"></a>
             </div>
         </div>
 
