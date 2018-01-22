@@ -1,4 +1,6 @@
-
+.clearfix {
+  clear: both;
+}
 #zoo_newsletter{
   .zoo-popup-newsletter-top{
     text-align: center;
@@ -170,6 +172,24 @@
 }
 .zoo-breadcrumbs .items {
   padding: 10px 0;
+}
+.catalog-product-view {
+  .zoo-breadcrumbs {
+    background: #fff;
+    .product-prev-next {
+      padding: 10px 0;
+      display: none;
+    }
+  }
+  .product-view-bg {
+    padding-top: 10px;
+  }
+  .zoo-banner-image {
+    margin: 0 0 20px 0;
+    .banner-content h3 {
+      font-size: 35px;
+    }
+  }
 }
 .page-title-wrapper{
   .page-title{
@@ -577,21 +597,6 @@
       }
     }
   }
-  .product-reviews-summary {
-    .reviews-actions {
-      a.view {
-        color: #26231f;
-        font-weight: 300;
-        margin-left: 12px;
-        line-height: 21px;
-        vertical-align: middle;
-        &:before {
-          content: '';
-          display: none;
-        }
-      }
-    }
-  }
   .product-item {
     .tocart {
       font-size: 14px;
@@ -601,7 +606,57 @@
     }
   }
 }
+.product-infomain, .product-info-main {
+  margin-bottom: 0;
+  .product-info-price {
+    border-bottom: none;
+  }
+}
+.product-social-links{
+  .product_socials_wrapper_inner{
+    display: inline-block;
+    a{
+      font-size: 16px;
+      font-size: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 3px;
+    }
+  }
+}
 
+.product-reviews-summary {
+  .reviews-actions {
+    a.view {
+      color: #26231f;
+      font-weight: 300;
+      margin-left: 12px;
+      line-height: 21px;
+      vertical-align: middle;
+      &:before {
+        content: '';
+        display: none;
+      }
+    }
+    a.add{display: none;}
+  }
+}
+.catalog-product-tab.isset {
+  .product.info.detailed {
+    position: relative;
+    padding-top: 0;
+  }
+  &.product-tab-detail {
+    .product.info.detailed:before {
+      content: '';
+      position: absolute;
+      border-top: 1px solid #e5e5e5;
+      left: -100%;
+      width: 1000%;
+    }
+  }
+}
 .products-grid.grid .product-item-info .product-item-description,.widget-product-grid .product-item-info .product-item-description,.products-grid.grid .product-item-info .category-price-list,.widget-product-grid .product-item-info .category-price-list{
   display:inline-block
 }
@@ -751,5 +806,58 @@
       letter-spacing: 2px;
       font-weight: 400;
     }
+  }
+}
+@media (max-width: 991px){
+    .page-header {
+      .header-panel {
+        display: block;
+      }
+      .header-content .logo img {
+        width: 60px;
+      }
+    }
+}
+@media (max-width: 767px) {
+  .page-header .topbar-container {
+    text-align: center;
+    label {
+      display: block;
+    }
+  }
+  .catalog-product-view {
+    .zoo-banner-image {
+      .banner-content h3 {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .button-link {
+        padding-top: 0;
+        a{
+          padding: 8px 20px;
+          border-width: 1px;
+        }
+      }
+    }
+  }
+  .service-static {
+    text-align: center;
+    .zoo-bar-content {
+      span {
+        display: block;
+      }
+      &:before {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (max-width: 639px) {
+  .page-header .panel.wrapper {
+    display: none;
+  }
+  .page-footer {
+    text-align: center;
   }
 }
