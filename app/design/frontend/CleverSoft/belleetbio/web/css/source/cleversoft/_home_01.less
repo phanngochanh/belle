@@ -517,12 +517,97 @@
       .abs-transform(~'translate(-30%, 20%)');
     }
   }
+  &.top-left{
+    .banner-content {
+      left: 0;
+      .abs-transform(~'translate(0%, -50%)');
+    }
+  }
 }
-
+.diagnosticpeau-step1{
+  .zoo-banner-image {
+    .banner-content{
+      color: #26231f;
+      padding-left: 30px;
+      h4{
+        font-size: 20px;
+        font-weight: 500;
+      }
+      h5{
+        font-size: 20px;
+        font-weight: 300;
+        padding-bottom: 20px;
+      }
+      strong{
+        font-weight: 600;
+      }
+      form{
+        padding-top: 30px;
+        h4{
+          padding: 20px 0;
+        }
+        input[type="text"]{
+          max-width: 435px;
+          height: 40px;
+          border-color: #ebebeb;
+        }
+      }
+    }
+  }
+}
+.diagnosticpeau-step{
+  .banner-content{
+    color: #26231f;
+    font-weight: 300;
+    max-width: 780px;
+  }
+  .diagnosticpeau-step-list {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: inline-block;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      .abs-transform(~'translate(-50%, -50%)');
+      width: 100%;
+      border-style: dashed;
+      border-width: 1px;
+      border-color: #333;
+    }
+    li {
+      display: inline-block;
+      padding: 0 20px;
+      span {
+        width: 35px;
+        background: #ffffff;
+        display: inline-block;
+        height: 35px;
+        border-radius: 50%;
+        line-height: 35px;
+        border: 1px solid #ffd6d6;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      &.active span{
+        background: #ffd6d6;;
+      }
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+}
 .button-link {
   clear: both;
   padding-top: 35px;
-  a{
+  a, .button{
     font-family: @font-family__fourth;
     padding: 13px 30px;
     text-transform: uppercase;
