@@ -229,6 +229,10 @@ if (!empty($icon)) {
                                     </a>
                                 </h5>
                             <?php endif; ?>
+                            <div class="product description product-item-description">
+                                <?php /* @escapeNotVerified */
+                                echo $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description') ?>
+                            </div>
                             <?php if ($showCart != 'remove'): ?>
                                 <div class="product_after_shop_loop_buttons actions-primary">
                                     <?php if ($_item->isSaleable()): ?>
@@ -591,12 +595,10 @@ if (!empty($icon)) {
                                                         <button type="submit"
                                                                 class="action tocart">
                                                     <span><?php /* @escapeNotVerified */
-                                                        echo __("j\’ajoute au panier") ?></span>
+                                                        echo __("j’ajoute au panier") ?></span>
                                                         </button>
                                                     </form>
-
                                                 <?php endif; ?>
-
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>

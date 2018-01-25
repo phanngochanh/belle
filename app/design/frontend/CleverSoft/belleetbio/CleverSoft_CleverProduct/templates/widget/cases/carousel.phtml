@@ -326,6 +326,10 @@ if (!empty($icon)) {
                                             </a>
                                         </h5>
                                     <?php endif; ?>
+                                    <div class="product description product-item-description">
+                                        <?php /* @escapeNotVerified */
+                                        echo $_helper->productAttribute($_item, $_item->getShortDescription(), 'short_description') ?>
+                                    </div>
 
                                     <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7') :?>
                                         <?php if ($showCart != 'remove'): ?>
@@ -445,7 +449,7 @@ if (!empty($icon)) {
                                                         <button type="submit"
                                                                 class="action tocart">
                                                     <span><?php /* @escapeNotVerified */
-                                                        echo __("j\’ajoute au panier") ?></span>
+                                                        echo __("j’ajoute au panier") ?></span>
                                                         </button>
                                                     </form>
 
