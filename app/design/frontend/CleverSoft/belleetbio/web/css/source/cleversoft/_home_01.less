@@ -239,6 +239,9 @@
   font-size: 14px;
   background-color: #26231f;
   color: #ffffff;
+  &:hover{
+    color: #ffffff!important;
+  }
 }
 .notification-dismiss{
   color: #ffffff;
@@ -791,7 +794,7 @@
     .price-box {
       .price {
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 500;
       }
       .old-price {
         .price {
@@ -800,6 +803,9 @@
           color: #26231f;
         }
       }
+    }
+    .actions-primary{
+      margin-top: 10px;
     }
     .product-item-details {
       text-align: center;
@@ -823,19 +829,38 @@
       }
     }
     .zoo-product-image {
-      .view-product-overlay {
-        display: none;
+      position: relative;
+      &:before{
+        content: '';
+        background: #fff;
         position: absolute;
-        top: 50%;
-        text-align: center;
+        top: 0;
+        left: 0;
         width: 100%;
-        font-weight: 300;
-        text-transform: uppercase;
-        >a {
-          font-weight: 600;
-          &:hover {
-            color: #26231f;
-          }
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 3;
+        .abs-transition(~'opacity 0.3s, visibility 0.3s');
+      }
+      .zoo-quickview{
+        background: transparent;
+        top: 50%;
+        left: 50%;
+        bottom: inherit;
+        .abs-transform(~'translate(-50%, -50%)');
+        span{
+          text-transform: uppercase;
+          font-weight: 500;
+          &.cs-font{display: none;}
+        }
+      }
+    }
+    &:hover{
+      .zoo-product-image {
+        &:before{
+          visibility: visible;
+          opacity: 0.3;
         }
       }
     }
@@ -1061,7 +1086,17 @@
 }
 
 
-
+@media(min-width:992px) and (max-width: 1199px){
+  .clever-horizontal-menu ul.clever-mega-menu li.level0>a.menu-link {
+    margin: 0;
+    padding: 0 8px;
+  }
+  .menu-right{
+    .clever-menu ul.clever-mega-menu > li.level-top > a, .clever-horizontal-menu .clever-mega-menu li.level0 > a.menu-link {
+      font-size: 14px;
+    }
+  }
+}
 @media(min-width:992px){
   .clever-horizontal-menu .clever-mega-menu li.clever-mega-menu-item.level0.clever-menu-justify>.clever-mega-menu-sub.container {
    background: #fff url(../images/image_rollover_navigation.jpg) no-repeat top right;

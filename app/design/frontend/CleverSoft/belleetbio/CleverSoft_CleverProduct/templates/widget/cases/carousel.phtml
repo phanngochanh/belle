@@ -168,7 +168,7 @@ if (!empty($icon)) {
                                                 </div>
                                             <?php endif; ?>
                                         <?php endif; ?>
-                                        <?php if ($theme->getCfg('product_quickview/enable') && $product_grid_style != 'product_grid_style_7') : ?>
+                                        <?php if ($theme->getCfg('product_quickview/enable') && $product_grid_style != 'product_grid_style_5' && $product_grid_style != 'product_grid_style_7') : ?>
                                             <div class="zoo-quickview">
                                                 <span class="cs-font clever-icon-quickview-5"> </span>
                                                 <span class="tooltip"><?php /* @escapeNotVerified */ echo __('Quick view') ?></span>
@@ -246,12 +246,12 @@ if (!empty($icon)) {
                                          </span>
                                     <?php endif; ?>
                                 </a>
-                                <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7'):?>
+                                <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_5' || $product_grid_style == 'product_grid_style_7'):?>
                                     <?php if ($theme->getCfg('product_quickview/enable')) : ?>
                                         <div class="zoo-quickview">
                                             <span class="cs-font clever-icon-quickview-5"> </span>
                                 <span rel="tooltip" data-placement="top"
-                                      class="btn-cart zoo-tooltip show-quickview"
+                                      class="show-quickview"
                                       data-id="<?php echo $_item->getId(); ?>">
                                  <?php echo __('Quick view') ?></span>
                                             <a class="product-quickview"
@@ -397,12 +397,17 @@ if (!empty($icon)) {
                                         <?php if ($templateType && $showRating != 'remove'): ?>
                                             <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
                                         <?php endif; ?>
+                                    <?php endif; ?>
 
-                                        <?php if ($showPrice != 'remove' && $product_grid_style != 'product_grid_style_1' && $product_grid_style != 'product_grid_style_4') : ?>
-                                            <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
-                                        <?php endif; ?>
+                                    <?php if ($showSwatchAttributes != 'remove'): ?>
+                                        <?php echo $block->getColorSwatchDetailsHtml($_item); ?>
                                     <?php endif; ?>
                                 </div>
+
+                                <?php if ($showPrice != 'remove' && $product_grid_style != 'product_grid_style_1' && $product_grid_style != 'product_grid_style_4') : ?>
+                                    <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
+                                <?php endif; ?>
+
                                 <?php if($block->getData('enable_countdown')) : ?>
                                     <?php if($countdown_position == 'product_metadata' ) : ?>
                                     <div class="clever-countdown <?php echo $countdown_position; ?>">
@@ -426,9 +431,6 @@ if (!empty($icon)) {
                                     <?php if ($templateType && $showRating != 'remove'): ?>
                                         <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
                                     <?php endif; ?>
-                                <?php endif; ?>
-                                <?php if ($showSwatchAttributes != 'remove'): ?>
-                                    <?php echo $block->getColorSwatchDetailsHtml($_item); ?>
                                 <?php endif; ?>
 
                                 <?php if ($product_grid_style == 'product_grid_style_5'): ?>
@@ -534,3 +536,13 @@ if (!empty($icon)) {
 </script>
 
 
+<script type="text/x-magento-init">
+    {
+        "#<?php echo $_id ?>": {
+            "equalHeight": {
+                "target": " .product_shop_loop"
+            }
+        }
+    }
+
+            </script>
