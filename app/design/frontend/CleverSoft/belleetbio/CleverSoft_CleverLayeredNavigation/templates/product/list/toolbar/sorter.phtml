@@ -17,7 +17,7 @@ use Magento\Catalog\Model\Product\ProductList\Toolbar;
 $_clnhelper = $this->helper('CleverSoft\CleverLayeredNavigation\Helper\Data');
 $is_ajax = $_clnhelper->isAjaxEnabled();
 ?>
-<div class="toolbar-sorter sorter">
+<div class="toolbar-sorter sorter d-flex">
     <label class="sorter-label" for="sorter"><?php /* @escapeNotVerified */ echo __('Sort By') ?></label>
     <div class="select-style">
         <select id="sorter" <?php if(!$is_ajax) echo "data-role='sorter'"; ?> class="sorter-options">

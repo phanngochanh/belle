@@ -1112,6 +1112,39 @@
     display: none!important;
   }
 }
+#toolbar-top{
+  .select-style{
+    border: 1px solid #ccc;
+    position: relative;
+    background: #fff;
+    &:before{
+      content: '';
+      position: absolute;
+      font-family: 'cleversoft';
+      content: "\c059";
+      right: 10px;
+      font-size: 12px;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  .toolbar-sorter{
+    height: 50px;
+    line-height: 50px;
+  }
+  .sorter-label{
+    padding-right: 30px;
+  }
+  .toolbar-products .toolbar-sorter .sorter-options {
+    width: 180px;
+    padding: 0 15px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+  }
+}
 .blog-widget-recent .post-ftimg-hld>a{
   display:block;
   background-size:cover;
