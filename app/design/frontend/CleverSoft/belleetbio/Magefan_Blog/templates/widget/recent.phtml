@@ -35,8 +35,8 @@ $number = 0;
                 <div class="col-sm-12 col-md-6 post-item post-item-<?php echo $number;?>">
                     <?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
                         <div class="post-images">
-                            <a href="<?php echo $_postUrl ?>" title="<?php echo $_postName ?>">
-                                <img src="<?php echo $featuredImage ?>" alt="<?php echo $_postName ?>"/>
+                            <a href="<?php echo $_postUrl ?>" title="<?php echo $_postName ?>"  style="background: #cccccc url(<?php echo $featuredImage ?>) center center;">
+
                             </a>
                         </div>
                     <?php } ?>

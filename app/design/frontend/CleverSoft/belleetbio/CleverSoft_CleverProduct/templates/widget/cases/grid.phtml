@@ -156,7 +156,7 @@ if (!empty($icon)) {
                                                     </div>
                                                 <?php endif; ?>
                                             <?php endif; ?>
-                                            <?php if ($theme->getCfg('product_quickview/enable') && $product_grid_style != 'product_grid_style_7') : ?>
+                                            <?php if ($theme->getCfg('product_quickview/enable') && $product_grid_style != 'product_grid_style_5' && $product_grid_style != 'product_grid_style_7') : ?>
                                                 <div class="zoo-quickview">
                                                     <span class="cs-font clever-icon-quickview-5"> </span>
                                                     <span class="tooltip"><?php /* @escapeNotVerified */ echo __('Quick view') ?></span>
@@ -234,13 +234,13 @@ if (!empty($icon)) {
                                          </span>
                                         <?php endif; ?>
                                     </a>
-                                    <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7'):?>
+                                    <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_5' || $product_grid_style == 'product_grid_style_7'):?>
                                         <?php if ($theme->getCfg('product_quickview/enable')) : ?>
                                             <div class="zoo-quickview">
                                                 <span class="cs-font clever-icon-quickview-5"> </span>
-                                            <span rel="tooltip" data-placement="top"
-                                                  class="btn-cart zoo-tooltip show-quickview"
-                                                  data-id="<?php echo $_item->getId(); ?>">
+                                                <span rel="tooltip" data-placement="top"
+                                                      class="show-quickview"
+                                                      data-id="<?php echo $_item->getId(); ?>">
                                  <?php echo __('Quick view') ?></span>
                                                 <a class="product-quickview"
                                                    href="<?php echo $block->getUrl('quickview/product/view/id/' . $_item->getId()); ?>"
@@ -368,20 +368,21 @@ if (!empty($icon)) {
                                             <?php if ($templateType && $showRating != 'remove'): ?>
                                                 <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
                                             <?php endif; ?>
+                                        <?php endif; ?>
 
-                                            <?php if ($showPrice != 'remove' && $product_grid_style != 'product_grid_style_1' && $product_grid_style != 'product_grid_style_4') : ?>
-                                                <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
-                                            <?php endif; ?>
+                                        <?php if ($showSwatchAttributes != 'remove'): ?>
+                                            <?php echo $block->getColorSwatchDetailsHtml($_item); ?>
                                         <?php endif; ?>
                                     </div>
+
+                                    <?php if ($showPrice != 'remove' && $product_grid_style != 'product_grid_style_1' && $product_grid_style != 'product_grid_style_4') : ?>
+                                        <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
+                                    <?php endif; ?>
 
                                     <?php if ($product_grid_style == 'product_grid_style_1'):?>
                                         <?php if ($templateType && $showRating != 'remove'): ?>
                                             <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
                                         <?php endif; ?>
-                                    <?php endif; ?>
-                                    <?php if ($showSwatchAttributes != 'remove'): ?>
-                                        <?php echo $block->getColorSwatchDetailsHtml($_item); ?>
                                     <?php endif; ?>
 
                                     <?php if ($product_grid_style == 'product_grid_style_5'): ?>

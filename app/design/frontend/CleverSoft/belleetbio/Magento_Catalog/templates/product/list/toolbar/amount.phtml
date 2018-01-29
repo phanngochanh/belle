@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright © 2017 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Product list toolbar
+ *
+ * @var $block \Magento\Catalog\Block\Product\ProductList\Toolbar
+ */
+use Magento\Catalog\Model\Product\ProductList\Toolbar;
+?>
+<p class="toolbar-amount" id="toolbar-amount">
+    <?php /* @escapeNotVerified */ echo '<span class="toolbar-number">' . $block->getLastNum() . '</span>'; ?>
+	<?php /* @escapeNotVerified */ echo __('results') ?>
+</p>
