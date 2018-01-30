@@ -437,11 +437,6 @@
     background-size: cover!important;
     min-height: 160px;
   }
-  &:nth-child(4n+1){
-    .post-images>a {
-      min-height: 250px;
-    }
-  }
   &.post-item-1, &.post-item-5{
     .post-categories a{
       color: #ff8080;
@@ -915,7 +910,32 @@
   margin-bottom: 0;
   .product-info-price {
     border-bottom: none;
+    .price-box{
+      &.price-final_price{
+        display: flex;
+        .old-price{
+          order: 0;
+        }
+        .special-price{
+          order: 1;
+        }
+      }
+      .old-price .price-container{
+        .price {
+          font-weight: 300;
+          font-size: 20px;
+          color: #26231f;
+        }
+      }
+    }
   }
+}
+.attribute-custom{
+  label{font-weight: 600}
+}
+.attribute-conditionnement{
+  background: transparent url("../images/icons/airless.png") no-repeat center left;
+  padding-left: 35px;
 }
 .product-social-links{
   .product_socials_wrapper_inner{
@@ -1113,6 +1133,13 @@
   }
 }
 #toolbar-top{
+  .toolbar.toolbar-products{
+    line-height: 50px;
+  }
+  .toolbar-amount {
+    float: inherit;
+    display: inline-block;
+  }
   .select-style{
     border: 1px solid #ccc;
     position: relative;
