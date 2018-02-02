@@ -1132,9 +1132,13 @@
     display: none!important;
   }
 }
+.mr-auto, .mx-auto {
+  margin-right: auto!important;
+}
 #toolbar-top{
   .toolbar.toolbar-products{
     line-height: 50px;
+    > *{line-height: 50px;}
   }
   .toolbar-amount {
     float: inherit;
@@ -1259,14 +1263,14 @@
             background: #fff url(../images/image_rollover_navigation.jpg) no-repeat top right;
           }
         }
-      }
-      ul.clever-mega-menu-sub {
-        li.clever-mega-menu-item{
-          border: none;
-          padding: 0;
-          margin: 0;
-          position: relative;
-          z-index: 1;
+        ul.clever-mega-menu-sub {
+          li.clever-mega-menu-item{
+            border: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+          }
         }
       }
     }
