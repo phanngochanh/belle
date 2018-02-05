@@ -296,6 +296,7 @@ define(['jquery', 'jquery/ui','domReady',"jQueryLibMin","CleverSoft_CleverProduc
                             display_addtocompare: display_addtocompare,
                             display_swatch_attributes: display_swatch_attributes,
                             display_productname: display_productname,
+                            product_grid_style: product_grid_style,
                             display_name_single_line: display_name_single_line,
                             display_price: display_price,
                             cid: cid,

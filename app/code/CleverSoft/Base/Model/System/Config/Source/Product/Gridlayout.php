@@ -21,6 +21,7 @@ class Gridlayout implements \Magento\Framework\Option\ArrayInterface
             ['value' => 'product_grid_style_5',            'label' => __('Style 5')],
             ['value' => 'product_grid_style_6',            'label' => __('Style 6')],
             ['value' => 'product_grid_style_7',            'label' => __('Style 7')],
+            ['value' => 'product_grid_style_8',            'label' => __('Style 8')],
         ];
     }
 }

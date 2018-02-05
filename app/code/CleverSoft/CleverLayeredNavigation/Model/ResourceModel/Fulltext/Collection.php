@@ -221,8 +221,10 @@ class Collection extends \Magento\Catalog\Model\ResourceModel\Product\Collection
             $this->requestBuilder->bind('price_dynamic_algorithm', $priceRangeCalculation);
         }
 
-        $categories_id = $this->getFlag('category_ids');
-        $this->requestBuilder->bind('category_ids',$categories_id);
+        if($this->getFlag('category_ids')) {
+            $this->requestBuilder->bind('category_ids',$this->getFlag('category_ids'));
+        }
+
         $this->requestBuilder->autoSetRequestName();
         $this->_memRequestBuilder = clone $this->requestBuilder;
         $queryRequest = $this->requestBuilder->create();

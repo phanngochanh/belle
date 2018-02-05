@@ -137,10 +137,10 @@ if (!empty($icon)) {
                 echo ($iterator++ == 1) ? '<li class="product_hover product product-item '.$product_stock.'">' : '</li><li class="product_hover product product-item '.$product_stock.'">' ?>
 
                 <div class="product-item-info  <?php if ($alternative_img = $theme->getAltImgHtml($_item, $imgWidth, $imgHeight, $image)): ?> have-alternative-image <?php endif; ?>" data-container="product-grid">
+                    <div class="zoo-inner-product-item-info">
                     <div class="zoo-product-image">
 
-                        <?php if ($product_grid_style != 'product_grid_style_1' && $product_grid_style == 'product_grid_style_2' || $product_grid_style == 'product_grid_style_3' || $product_grid_style == 'product_grid_style_4' || $product_grid_style == 'product_grid_style_5' || $product_grid_style == 'product_grid_style_6' || $product_grid_style == 'product_grid_style_7'):?>
-                            <div class="add-to-link">
+                        <div class="add-to-link">
                                 <?php if ( $product_grid_style != 'product_grid_style_4' && $product_grid_style != 'product_grid_style_5' && $product_grid_style != 'product_grid_style_7'): ?>
                                     <?php if ($showCart != 'remove'): ?>
                                         <div class="actions-primary zoo-addtocart">
@@ -156,7 +156,7 @@ if (!empty($icon)) {
                                                            value="<?php /* @escapeNotVerified */
                                                            echo $postParams['data'][Action::PARAM_NAME_URL_ENCODED]; ?>">
                                                     <?php echo $block->getBlockHtml('formkey') ?>
-                                                    <button type="submit" class="action tocart"><span><i class="cs-font clever-icon-cart-10"></i></span> <span class="tooltip"><?php echo __('Add to Cart') ?></span></button>
+                                                    <button type="submit" class="action tocart"><i class="cs-font clever-icon-cart-10"></i><span class="tooltip"><?php echo __('Add to Cart') ?></span></button>
                                                 </form>
 
                                             <?php endif; ?>
@@ -191,7 +191,6 @@ if (!empty($icon)) {
                                     </div>
                                 <?php endif; ?>
                             </div>
-                        <?php endif; ?>
                         <?php if ($_item->getIsSalable()): echo $theme->getLabel($_item); ?>
                         <?php else : ?>
                             <div class="stock unavailable"><span><?php /* @escapeNotVerified */
@@ -245,7 +244,7 @@ if (!empty($icon)) {
                             <?php endif; ?>
                         </a>
 
-                        <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7'):?>
+                        <?php if ( $product_grid_style == 'product_grid_style_7'):?>
                             <?php if ($theme->getCfg('product_quickview/enable')) : ?>
                                 <div class="zoo-quickview">
                                     <span class="cs-font clever-icon-quickview-5"> </span>
@@ -309,38 +308,7 @@ if (!empty($icon)) {
                         </div>
                         <!-- End Show for product list layout -->
 
-                        <div class="shop_product_metas">
-                            <?php if ($product_grid_style == 'product_grid_style_1'):?>
-                                <?php if ($showPrice != 'remove'): ?>
-                                    <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
-                                <?php endif; ?>
-                            <?php endif; ?>
-                            <?php if ($product_grid_style == 'product_grid_style_1'):?>
-                                    <div class="add-to-links">
-                                        <?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist != 'remove'): ?>
-                                            <div class=""
-                                                 data-role="add-to-links">
-                                                <a href="#" data-post='<?php /* @escapeNotVerified */
-                                                echo $block->getAddToWishlistParams($_item); ?>'
-                                                   data-action="add-to-wishlist" title="">
-                                                    <i class="cs-font clever-icon-heart-o"></i>
-                                                </a>
-                                            </div>
-                                        <?php endif; ?>
-                                        <?php if ($block->getAddToCompareUrl() && $showCompare != 'remove'): ?>
-                                            <div class=""
-                                                 data-role="add-to-links">
-                                                <?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?>
-                                                <a href="#" class="action tocompare"
-                                                   data-post='<?php /* @escapeNotVerified */
-                                                   echo $compareHelper->getPostDataParams($_item); ?>'>
-                                                    <span class="cs-font clever-icon-reload"></span>
-                                                </a>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
-                            <?php endif; ?>
-                        </div>
+                   
 
                         <div class="hover-area product_shop_loop">
                             <?php if ($showProductName != 'remove'): ?>
@@ -354,7 +322,7 @@ if (!empty($icon)) {
                                 </h5>
                             <?php endif; ?>
 
-                            <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7') :?>
+                            <?php if ( $product_grid_style == 'product_grid_style_7') :?>
                                 <?php if ($showCart != 'remove'): ?>
                                     <div class="actions-primary">
                                         <?php if ($_item->isSaleable()): ?>
@@ -438,21 +406,17 @@ if (!empty($icon)) {
                                 </div>
                             <?php endif; ?>
 
-                            <?php if ($product_grid_style != 'product_grid_style_1'):?>
+                    
                                 <?php if ($templateType && $showRating != 'remove'): ?>
                                     <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
                                 <?php endif; ?>
 
-                                <?php if ($showPrice != 'remove' && $product_grid_style != 'product_grid_style_1' && $product_grid_style != 'product_grid_style_4') : ?>
+                                <?php if ($showPrice != 'remove'  && $product_grid_style != 'product_grid_style_4') : ?>
                                     <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
                                 <?php endif; ?>
-                            <?php endif; ?>
+                        
                         </div>
-                        <?php if ($product_grid_style == 'product_grid_style_1'):?>
-                            <?php if ($templateType && $showRating != 'remove'): ?>
-                                    <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
-                            <?php endif; ?>
-                        <?php endif; ?>
+                    
                         <?php if ($showSwatchAttributes != 'remove'): ?>
                                 <?php echo $block->getProductDetailsHtml($_item); ?>
                         <?php endif; ?>
@@ -527,6 +491,7 @@ if (!empty($icon)) {
                                 </p>
                             <?php endif; ?>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <?php echo ($iterator == count($items) + 1) ? '</li>' : '' ?>

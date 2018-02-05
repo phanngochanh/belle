@@ -689,7 +689,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper{
      *get ordered qty
      */
     public function getOrderedQuantity($productId){
-        $ordQty = $this->soldCollection->addOrderedQty()
+        $ordQty = $this->soldCollection->clear()->addOrderedQty()
             ->addFieldToFilter('product_id',$productId)
             ->setOrder('ordered_qty', 'desc')
             ->getFirstItem();

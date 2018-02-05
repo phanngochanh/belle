@@ -466,18 +466,6 @@
                     <source_model>CleverSoft\CleverLayeredNavigation\Model\Source\DisplayMode</source_model>
                 </field>
             </group>
-            <group id="brand_filter" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Brand Filter </label>
-                <field id="attribute_code" translate="label,comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Brand Attribute</label>
-                    <comment>Creates SEO-friendly brand pages. Every page contains all your products filtered by particular brand and contains unique content that you assigned for the option of brand attribute.</comment>
-                    <source_model>CleverSoft\CleverLayeredNavigation\Model\Source\BrandAttribute</source_model>
-                </field>
-                <field id="url_key" translate="label,comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>URL Key</label>
-                    <comment>Adds a key before brand name in URL like /[key]/brand-name.html</comment>
-                </field>
-            </group>
             <group id="category_title_des" translate="label" type="select" sortOrder="65" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Category Title and Description</label>
                 <comment>Please open Stores -> Attributes -> Product -> [open attribute] -> Properties -> [open attribute option settings] in order to define Title, Description, Image and CMS block for your filter options.</comment>

@@ -1003,12 +1003,11 @@
     <cms_block>
       <title>Home 07 - Parallax Image</title>
       <identifier>home07-parallax-image</identifier>
-      <content><![CDATA[<div class="parallax home07" style="background: url({{media url='wysiwyg/images/home07/parallax-home07.jpg'}}); background-size: cover; background-attachment: fixed; height: 650px; background-position: center center;">
+      <content><![CDATA[<div class="parallax home07" style="height: 650px; ">
 <div class="content-parallax">
 <h2>A home in Islington</h2>
 <p>The best of decor 2016</p>
-<a href="#">Shop Now</a>
-</div>
+<a href="#">Shop Now</a></div>
 </div>]]></content>
       <is_active>1</is_active>
       <stores>0</stores>

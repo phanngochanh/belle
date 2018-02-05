@@ -32,7 +32,7 @@
          <display_productname>visible</display_productname>
          <display_name_single_line>1</display_name_single_line>
          <display_rating>visible</display_rating>
-         <display_addtocart>hover</display_addtocart>
+         <display_addtocart>visible</display_addtocart>
          <display_addtolinks>0</display_addtolinks>
          <addtolinks_simple>2</addtolinks_simple>
          <addtolinks_position>0</addtolinks_position>
@@ -41,7 +41,6 @@
          <column_count_640>2</column_count_640>
          <column_count_480>2</column_count_480>
          <equal_height>1</equal_height>
-
          <centered>0</centered>
          <enable_border_boxshadow>0</enable_border_boxshadow>
          <disable_border_radius>0</disable_border_radius>
@@ -63,7 +62,7 @@
          <tabs_threshold>1024</tabs_threshold>
          <tabs_collapsed>1</tabs_collapsed>
          <tabs_style>style1</tabs_style>
-         <collateral_position>lowerPrimCol_1</collateral_position>
+         <collateral_position>primCol_2</collateral_position>
          <collateral_reviews>1</collateral_reviews>
          <collateral_tags>1</collateral_tags>
          <collateral_related>0</collateral_related>
@@ -352,4 +351,9 @@
          <control_robots>1</control_robots>
       </robots>
    </clevershopby>
+   <cleverdeferjs>
+      <general>
+         <enable>1</enable>
+      </general>
+   </cleverdeferjs>
 </default>

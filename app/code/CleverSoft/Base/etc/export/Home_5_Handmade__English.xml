@@ -32,7 +32,7 @@
          <display_productname>visible</display_productname>
          <display_name_single_line>1</display_name_single_line>
          <display_rating>visible</display_rating>
-         <display_addtocart>hover</display_addtocart>
+         <display_addtocart>visible</display_addtocart>
          <display_addtolinks>0</display_addtolinks>
          <addtolinks_simple>2</addtolinks_simple>
          <addtolinks_position>0</addtolinks_position>
@@ -41,7 +41,6 @@
          <column_count_640>2</column_count_640>
          <column_count_480>2</column_count_480>
          <equal_height>1</equal_height>
-
          <centered>0</centered>
          <enable_border_boxshadow>0</enable_border_boxshadow>
          <disable_border_radius>0</disable_border_radius>
@@ -128,7 +127,7 @@
          <primary_font_family_group>google</primary_font_family_group>
          <primary_font_family_custom>Cairo</primary_font_family_custom>
          <primary_font_family>Poppins</primary_font_family>
-         <primary_char_subset>latin</primary_char_subset>
+         <primary_char_subset/>
          <primary_font_weight>400</primary_font_weight>
          <h1_font>0</h1_font>
          <h1_primary_font_family_group>google</h1_primary_font_family_group>
@@ -144,7 +143,7 @@
          <h6_primary_font_family_group>google</h6_primary_font_family_group>
       </font>
       <page>
-         <bg_color>#eeeeee</bg_color>
+         <bg_color>#ffffff</bg_color>
          <bg_image/>
          <bg_repeat>repeat</bg_repeat>
          <bg_attachment>scroll</bg_attachment>
@@ -352,4 +351,9 @@
          <control_robots>1</control_robots>
       </robots>
    </clevershopby>
+   <cleverdeferjs>
+      <general>
+         <enable>1</enable>
+      </general>
+   </cleverdeferjs>
 </default>

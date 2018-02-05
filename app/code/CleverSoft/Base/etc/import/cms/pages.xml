@@ -30,7 +30,7 @@
       <identifier>home</identifier>
       <content><![CDATA[<div class="row"><!-- slideshow--> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshow-home01"}} <!-- end slideshow--></div>
 <!-- New Arrivals-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="zoo-widget-style2 zoo-title-style4" lazyload="1" height_image="200"  image_width="280" widget_title="New Arrivals"   widget_sub_title="New Season Picks" layout="carousel" widget_tab="none" mode="latest" category_ids="97,108,171,54" template="widget/product.phtml" labels="10" limit="6" autoplay="0" autoplaytimeout="4" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="visible" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="zoo-widget-style2 zoo-title-style4" lazyload="1" height_image="200"  image_width="280" widget_title="New Arrivals"   widget_sub_title="New Season Picks" layout="carousel" widget_tab="none" mode="latest" category_ids="55,57,160" template="widget/product.phtml" labels="10" limit="6" autoplay="0" autoplaytimeout="4" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" product_grid_style="product_grid_style_1" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="visible" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals-->
 <div></div>
 <!-- Image Block -->
@@ -38,7 +38,7 @@
 <!-- End Image Block -->
 <div></div>
 <!-- Trending Now-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="zoo-title-style4 zoo-widget-style1" lazyload="1" height_image="200"  image_width="280" widget_title="Trending Now"  widget_sub_title="All Thing Light" layout="carousel" widget_tab="none" mode="rating" category_ids="97,108,171,54" template="widget/product.phtml" labels="10" limit="6" autoplay="0" autoplaytimeout="4" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="zoo-title-style4 zoo-widget-style1" lazyload="1" height_image="200"  image_width="280" widget_title="Trending Now"  widget_sub_title="All Thing Light" layout="carousel" widget_tab="none" mode="latest" category_ids="171" template="widget/product.phtml" labels="10" limit="6" autoplay="0" autoplaytimeout="4" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" product_grid_style="product_grid_style_1" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End Trending Now -->
 <div></div>
 <!-- Service Block-->
@@ -439,7 +439,7 @@
 <!-- End Image Block-->
 <div></div>
 <!-- New Arrivals-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals For Skater" layout="carousel" widget_tab="none" mode="latest" category_ids="97,108,171" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='cs-font clever-icon-prev'></i>" navigation_next="<i class='cs-font clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="5" classes="zoo-widget-style2 zoo-title-style1 bg-transparent" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals For Skater" layout="carousel" widget_tab="none" mode="latest" category_ids="171" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='cs-font clever-icon-prev'></i>" navigation_next="<i class='cs-font clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="5" classes="zoo-widget-style2 zoo-title-style1" product_grid_style="product_grid_style_2" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals-->
 <div></div>
 <!-- Service Block-->
@@ -458,18 +458,10 @@
       <stores>0</stores>
     </cms_page>
     <cms_page>
-      <title>Blog</title>
-      <identifier>blog</identifier>
-      <content><![CDATA[blog]]></content>
-      <is_active>1</is_active>
-      <page_layout>1column</page_layout>
-      <stores>0</stores>
-    </cms_page>
-    <cms_page>
       <title>CleverSoft Homepage 3</title>
       <identifier>cleversoft-homepage-3</identifier>
       <content><![CDATA[<!-- Slideshow -->
-{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshow-home03"}}
+<div>{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshow-home03"}}</div>
 <!-- End Slideshow -->
 <div></div>
 <!-- Image block -->
@@ -477,8 +469,9 @@
 <!-- End Image block -->
 <div></div>
 <!-- New Arrivals -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals" layout="carousel" widget_tab="none" mode="latest" category_ids="54" template="widget/product.phtml" labels="10" limit="10" navigation="1" navigation_prev="<i class='cs-font clever-icon-prev'></i>" navigation_next="<i class='cs-font clever-icon-next'></i>" col_480="1" col_768="1" col_992="2" column="5" classes="zoo-widget-style2 zoo-title-style4 container bg-transparent" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals" layout="carousel" widget_tab="none" mode="latest" category_ids="160" template="widget/product.phtml" labels="10" limit="10" navigation="1" navigation_prev="<i class='cs-font clever-icon-prev'></i>" navigation_next="<i class='cs-font clever-icon-next'></i>" col_480="1" col_768="1" col_992="2" column="5" classes="zoo-widget-style2 zoo-title-style4 container" product_grid_style="product_grid_style_3" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals -->
+<p></p>
 <!-- Banner block -->
 <div>{{widget type="CleverSoft\CleverBlock\Block\Widget" enable_fullwidth="1" classes="static-banner-girl" block_ids="38" block_lg="38,12," block_md="38,12," block_sm="38,12," block_xs="38,12," template="widget/block.phtml"}}</div>
 <!-- End Banner block -->
@@ -502,11 +495,11 @@
 <!-- end Image block-->
 <div></div>
 <!-- New Arrivals For Him-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="carousel" lazyload="1" height_image="220" widget_tab="none" mode="latest" category_ids="97,108,171" image_width="300" widget_title="New Arrivals For Him" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="2" col_992="3" column="4" classes="zoo-widget-style2 zoo-title-style1" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="carousel" lazyload="1" height_image="220" widget_tab="none" mode="latest" category_ids="97,108,171" image_width="300" widget_title="New Arrivals For Him" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="2" col_992="3" column="4" classes="zoo-widget-style2 zoo-title-style1" product_grid_style="product_grid_style_4" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals For Him-->
 <div></div>
 <!-- New Arrivals For Her-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="carousel" lazyload="1" height_image="220" widget_tab="none" mode="latest" category_ids="54" image_width="300" widget_title="New Arrivals For Her" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="2" col_992="3" column="4" classes="zoo-widget-style1 zoo-title-style1" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="carousel" lazyload="1" height_image="220" widget_tab="none" mode="latest" category_ids="54" image_width="300" widget_title="New Arrivals For Her" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="2" col_992="3" column="4" classes="zoo-widget-style1 zoo-title-style1" product_grid_style="product_grid_style_4" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals For Her-->
 <div></div>
 <!-- Static Block -->
@@ -524,12 +517,12 @@
 <!-- End Static shop -->
 <div></div>
 <!-- New Arrivals -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals" classes="zoo-title-style1" layout="carousel" widget_tab="none" mode="random" category_ids="178" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="1" col_768="2" col_992="3" column="3" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals" classes="zoo-title-style1" layout="carousel" widget_tab="none" mode="random" category_ids="97" template="widget/product.phtml" labels="10" limit="10" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="1" col_768="2" col_992="3" column="3" product_grid_style="product_grid_style_5" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  aspect_ratio="1" image_width="300" }}</div>
 <!-- End New Arrivals -->
 <div></div>
 <!-- From Blog -->
 <div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Lastest News" number_of_posts="3" custom_template="widget/blog_home05.phtml"}}</div>
-<!-- End From Blog -->]]></content>
+<!-- End From Blog --> ]]></content>
       <is_active>1</is_active>
       <page_layout>2columns-left</page_layout>
       <stores>0</stores>
@@ -546,7 +539,7 @@
 <div class="featured-products">
 <h3 class="title">Featured Products</h3>
 </div>
-{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="97,54,31" template="widget/product.phtml"  limit="8"  image_width="300" image_height="400" classes="zoo-widget-style1 zoo-widget-tab-style1" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="97,54,31" template="widget/product.phtml"  limit="8"  image_width="500" classes="zoo-widget-style1 zoo-widget-tab-style1" product_grid_style="product_grid_style_6" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End Product tab -->
 <div></div>
 <!-- Image Static -->
@@ -554,7 +547,7 @@
 <!-- End Image Static -->
 <div></div>
 <!-- From Blog -->
-<div class="zoo-widget-style2">{{widget type="Magefan\Blog\Block\Widget\Recent" title="From Blog" number_of_posts="3" custom_template="widget/blog_home06.phtml"}}</div>
+<div class="zoo-widget-style2">{{widget type="Magefan\Blog\Block\Widget\Recent" title="From Blog" number_of_posts="3" custom_template="widget/blog_home05.phtml"}}</div>
 <!-- End From Blog -->
 <div></div>
 <!-- Button Static -->
@@ -589,7 +582,7 @@
 <!-- end Image block-->
 <div></div>
 <!-- Featured Products-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="latest" category_ids="181,182,184,183" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" classes="zoo-widget-style5 title-style5 " display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="latest" category_ids="181" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" classes="zoo-widget-style5 title-style5 " product_grid_style="product_grid_style_7" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End Featured Products -->
 <div></div>
 <!-- Image Parallax-->
@@ -597,7 +590,7 @@
 <!-- End Image Parallax-->
 <div></div>
 <!-- New Arrivals-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals" layout="carousel" widget_tab="none" mode="random" category_ids="181,182,184,183" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" classes="zoo-widget-style5 title-style5 " display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="New Arrivals" layout="carousel" widget_tab="none" mode="random" category_ids="181" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" classes="zoo-widget-style5 title-style5 " product_grid_style="product_grid_style_7" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals -->
 <div></div>
 <!-- Testimonial-->
@@ -619,133 +612,133 @@
       <title>CleverSoft HomePage 9</title>
       <identifier>cleversoft-homepage-9</identifier>
       <content><![CDATA[<div class="row width-768"><!-- vertical menu-->
-<div class="col-sm-3 col-lg-2 hidden-xs zoo-widget-style2 padding-right-0 width-hidden-768">
-<div class="zoo-navigation-vertical">
-<div class="block-title"><i class="fa fa-bars"></i>
-<h4>Categories</h4>
-</div>
-</div>
-{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home-09-vertical-menu"}}</div>
-<!--end  vertical menu-->
-<div></div>
-<!-- slideshow--> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshow-home09"}} <!-- end slideshow-->
-<div></div>
-<!-- Image Block--> {{widget classes="visible-lg padding-left-0 col-sm-3" type="CleverSoft\CleverBlock\Block\Widget" block_ids="97" block_lg="97,12," block_md="97,12," block_sm="97,12," block_xs="97,12," template="widget/block.phtml"}} <!-- End Image Block--></div>
+    <div class="col-sm-3 col-lg-2 hidden-xs zoo-widget-style2 padding-right-0 width-hidden-768">
+        <div class="zoo-navigation-vertical">
+            <div class="block-title"><i class="fa fa-bars"></i>
+                <h4>Categories</h4>
+            </div>
+        </div>
+        {{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home-09-vertical-menu"}}</div>
+    <!--end  vertical menu-->
+    <div></div>
+    <!-- slideshow--> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshow-home09"}} <!-- end slideshow-->
+    <div></div>
+    <!-- Image Block--> {{widget classes="visible-lg padding-left-0 col-sm-3" type="CleverSoft\CleverBlock\Block\Widget" block_ids="97" block_lg="97,12," block_md="97,12," block_sm="97,12," block_xs="97,12," template="widget/block.phtml"}} <!-- End Image Block--></div>
 <div></div>
 <!-- Product Countdown -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Today&rsquo;s Deal" classes="zoo-title-style2 product_countdown"  image_height="330"  image_width="330" lazyload="1" height_image="250" layout="carousel" countdown="1" widget_tab="none" mode="latest" category_ids="251,249,248,247,246,245,244,243,242,192,255,190,188" template="widget/product.phtml" labels="10" limit="6" autoplay="0" autoplayhoverpause="1" navigation="1" autoplaytimeout="4000" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="1" col_768="3" col_992="3" column="4" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Today&rsquo;s Deal" classes="zoo-title-style2 product_countdown"  image_height="330"  image_width="330" lazyload="1" height_image="250" layout="carousel" countdown="1" countdown_label="Hurry up!! This offer expires in : " widget_tab="none" countdown_position="product_metadata" enable_progress_bar="0" mode="latest" category_ids="251,249,248,247,246,245,244,243,242,192,255,190,188,194" template="widget/product.phtml" labels="10" limit="6" autoplay="0" autoplayhoverpause="1" navigation="1" autoplaytimeout="4000" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="1" col_768="3" col_992="3" column="4" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }}</div>
 <!-- End Product Countdown -->
 <div></div>
 <div class="box-market">
-<div id="color-section1" class="smooth-section"></div>
-<div class="color-section color-section1 zoo-widget-style2">
-<div class="row"><!-- vertical women menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-women"}}</div>
-<!--end  vertical women menu-->
-<div></div>
-<!-- slideshow women -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowwomen-home09"}} <!-- end slideshow women -->
-<div></div>
-<!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Women" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" lazyload="1" height_image="200" lazyload="1" column_grid="3" widget_tab="none" category_ids="251,249,248,247,246,245,244,243,242" image_width="198" image_height="198" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}} <!-- End Tab product  --></div>
-</div>
-<div></div>
-<!-- Logo Brand -->
-<div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/1.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/2.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/3.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/4.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/5.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/6.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/7.png" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" autoplaytime="5" enable_nav="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>"nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
-<!-- End Logo Brand -->
-<div></div>
-<div id="color-section2" class="smooth-section"></div>
-<div class="color-section color-section2 zoo-widget-style1">
-<div class="row"><!-- vertical men menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-men"}}</div>
-<!--end  vertical men menu-->
-<div></div>
-<!-- slideshow men --> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowmen-home09"}}<!-- end slideshow men -->
-<div></div>
-<!-- men product -->
-<div class="box-product-grid padding-0 col-xs-12 col-md-9 col-lg-6">
-<div class="product-gird-left padding-0 col-sm-8">{{widget classes="hidden-xs product-gird-left-top" type="CleverSoft\CleverBlock\Block\Widget" block_ids="116" block_lg="116,12," block_md="116,12," block_sm="116,12," block_xs="116,12," template="widget/block.phtml"}} {{widget classes="product-gird-left-bottom tab-style2" widget_title="Men" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="2" image_width="198" image_height="198" lazyload="1" height_image="140" widget_tab="none" category_ids="255" template="widget/product.phtml" limit="2" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
-{{widget classes="product-gird-right tab-style2 col-sm-4 padding-0" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="1" image_width="198" image_height="198" lazyload="1" height_image="150" widget_tab="none" category_ids="256" template="widget/product.phtml" limit="2" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
-<!-- End men product  --></div>
-</div>
-<div></div>
-<div id="color-section3" class="smooth-section"></div>
-<div class="color-section color-section3 zoo-widget-style1">
-<div class="row"><!-- vertical jewelry menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-jewelry"}}</div>
-<!--end  vertical jewelry menu-->
-<div></div>
-<!-- slideshow jewelry -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowjewelry-home09"}}<!-- end slideshow jewelry -->
-<div></div>
-<!-- jewelry product -->
-<div class="box-product-grid padding-0 col-md-9 col-lg-6">
-<div class="product-gird-left padding-0 col-sm-8">{{widget classes="product-gird-left-bottom tab-style2" widget_title="Jewelry" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" lazyload="1" column_grid="2" image_width="198" image_height="198" height_image="150" widget_tab="none" category_ids="187,193,194,195,196,197,198,199,200" template="widget/product.phtml" limit="4" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
-{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" brands="demo,demo,demo,demo" linkto=",,," img="http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/1.png,http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/2.png,http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/3.png,http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/4.png" layoutwg="vertical" lazyload="0" height_image="90" vautoplaytime="5" vnavigation_prev="<span class='clever-icon-up'></span>" vnavigation_next="<span class='clever-icon-down'></span>" vnumber_item="4" customclass="product-gird-right hidden-xs col-sm-4 padding-0"}}</div>
-<!-- End jewelry product  --></div>
-</div>
-<div></div>
-<div id="color-section4" class="smooth-section"></div>
-<div class="color-section color-section4 zoo-widget-style2">
-<div class="row"><!-- vertical toy-kids menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-toy-kids"}}</div>
-<!--end  vertical toy-kids menu-->
-<div></div>
-<!-- slideshow toy-kids -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowtoy-kids-home09"}}<!-- end slideshow toy-kids --> <!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Toy Kids" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="3" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="collections" collections="random,latest" category_ids="210,209,208,207,206,205,204,202" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}} <!-- End Tab product  --></div>
-</div>
-<div></div>
-<!-- Logo Brand -->
-<div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/1.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/2.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/3.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/4.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/5.jpg" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" autoplaytime="5" enable_nav="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>"nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
-<!-- End Logo Brand -->
-<div></div>
-<div id="color-section5" class="smooth-section"></div>
-<div class="color-section color-section5 zoo-widget-style2">
-<div class="row"><!-- vertical electronic menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-electronic"}}</div>
-<!--end  vertical electronic menu-->
-<div></div>
-<!-- slideshow electronic --> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowelectronic-home09"}}<!-- end slideshow electronic -->
-<div></div>
-<!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Electronic" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="3" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="collections" collections="random,latest" category_ids="190" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}} <!-- End Tab product  --></div>
-</div>
-<div></div>
-<!-- Logo Brand -->
-<div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/1.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/2.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/3.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/4.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/5.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/6.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/7.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/8.jpg" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" autoplaytime="5" enable_nav="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>"nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
-<!-- End Logo Brand -->
-<div></div>
-<div id="color-section6" class="smooth-section"></div>
-<div class="color-section color-section6 zoo-widget-style1">
-<div class="row"><!-- vertical sport menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-sport"}}</div>
-<!--end  vertical sport menu-->
-<div></div>
-<!-- slideshow sport -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowsport-home09"}}<!-- end slideshow sport -->
-<div></div>
-<!-- sport product -->
-<div class="box-product-grid padding-0 col-md-9 col-lg-6">
-<div class="product-gird-left padding-0 col-sm-8">{{widget classes="product-gird-left-bottom tab-style2" widget_title="Sport" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="2" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="none" category_ids="191" template="widget/product.phtml" limit="4" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
-{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="col-sm-4 product-gird-right padding-0 hidden-xs"  vnumber_item="5"  brands="demo,demo,demo,demo,demo,demo,demo,demo,demo,demo" linkto=",,,,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/1.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/2.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/3.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/4.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/5.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/6.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/7.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/8.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/9.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/10.jpg" layoutwg="vertical" vautoplay="0" autoplaytime="5" vnavigation_prev="<span class='clever-icon-up'></span>" vnavigation_next="<span class='clever-icon-down'></span>"}}</div>
-<!-- End sport product  --></div>
-</div>
-<div></div>
-<div id="color-section7" class="smooth-section"></div>
-<div class="color-section color-section7 zoo-widget-style2">
-<div class="row"><!-- vertical pet menu-->
-<div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-pet"}}</div>
-<!--end  vertical pet menu-->
-<div></div>
-<!-- slideshow pet -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowpet-home09"}}<!-- end slideshow pet -->
-<div></div>
-<!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Pet" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="3" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="collections" collections="random,latest" category_ids="192" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}} <!-- End Tab product  --></div>
-</div>
-<!-- Logo Brand -->
-<div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/1.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/2.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/3.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/4.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/5.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/6.png" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" enable_nav="1" autoplaytime="5" nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
-<!-- End Logo Brand -->
-<div></div>
-<!-- Service Block-->
-<div>{{widget type="CleverSoft\CleverBlock\Block\Widget" classes="service-block-home09 hidden-xs" block_ids="19" enable_fullwidth="1" block_lg="19,12," block_md="19,12," block_sm="19,12," block_xs="19,12," template="widget/block.phtml"}}</div>
-<!-- End Service Block-->
-<div></div>
-<!-- vertical menu onepage -->
-<div class="vertical-menu-one-page">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home-09-vertical-menu-one-page"}}</div>
-<!--end  vertical menu onepage --></div>]]></content>
+    <div id="color-section1" class="smooth-section"></div>
+    <div class="color-section color-section1 zoo-widget-style2">
+        <div class="row"><!-- vertical women menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-women"}}</div>
+            <!--end  vertical women menu-->
+            <div></div>
+            <!-- slideshow women -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowwomen-home09"}} <!-- end slideshow women -->
+            <div></div>
+            <!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Women" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" lazyload="1" height_image="200" lazyload="1" column_grid="3" widget_tab="none" category_ids="251,249,248,247,246,245,244,243,242" image_width="198" image_height="198" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }} <!-- End Tab product  --></div>
+    </div>
+    <div></div>
+    <!-- Logo Brand -->
+    <div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/1.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/2.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/3.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/4.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/5.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/6.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/women/7.png" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" autoplaytime="5" enable_nav="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>"nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
+    <!-- End Logo Brand -->
+    <div></div>
+    <div id="color-section2" class="smooth-section"></div>
+    <div class="color-section color-section2 zoo-widget-style1">
+        <div class="row"><!-- vertical men menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-men"}}</div>
+            <!--end  vertical men menu-->
+            <div></div>
+            <!-- slideshow men --> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowmen-home09"}}<!-- end slideshow men -->
+            <div></div>
+            <!-- men product -->
+            <div class="box-product-grid padding-0 col-xs-12 col-md-9 col-lg-6">
+                <div class="product-gird-left padding-0 col-sm-8">{{widget classes="hidden-xs product-gird-left-top" type="CleverSoft\CleverBlock\Block\Widget" block_ids="116" block_lg="116,12," block_md="116,12," block_sm="116,12," block_xs="116,12," template="widget/block.phtml"}} {{widget classes="product-gird-left-bottom tab-style2" widget_title="Men" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="2" image_width="198" image_height="198" lazyload="1" height_image="140" widget_tab="none" category_ids="256" template="widget/product.phtml" limit="2" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }}</div>
+                {{widget classes="product-gird-right tab-style2 col-sm-4 padding-0" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="1" image_width="198" image_height="198" lazyload="1" height_image="150" widget_tab="none" category_ids="256" template="widget/product.phtml" limit="2" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }}</div>
+            <!-- End men product  --></div>
+    </div>
+    <div></div>
+    <div id="color-section3" class="smooth-section"></div>
+    <div class="color-section color-section3 zoo-widget-style1">
+        <div class="row"><!-- vertical jewelry menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-jewelry"}}</div>
+            <!--end  vertical jewelry menu-->
+            <div></div>
+            <!-- slideshow jewelry -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowjewelry-home09"}}<!-- end slideshow jewelry -->
+            <div></div>
+            <!-- jewelry product -->
+            <div class="box-product-grid padding-0 col-md-9 col-lg-6">
+                <div class="product-gird-left padding-0 col-sm-8">{{widget classes="product-gird-left-bottom tab-style2" widget_title="Jewelry" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" lazyload="1" column_grid="2" image_width="198" image_height="198" height_image="150" widget_tab="none" category_ids="187,193,194,195,196,197,198,199,200" template="widget/product.phtml" limit="4" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }}</div>
+                {{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" brands="demo,demo,demo,demo" linkto=",,," img="http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/1.png,http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/2.png,http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/3.png,http://192.168.1.52/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/Jewelry/4.png" layoutwg="vertical" lazyload="0" height_image="90" vautoplaytime="5" vnavigation_prev="<span class='clever-icon-up'></span>" vnavigation_next="<span class='clever-icon-down'></span>" vnumber_item="4" customclass="product-gird-right hidden-xs col-sm-4 padding-0"}}</div>
+            <!-- End jewelry product  --></div>
+    </div>
+    <div></div>
+    <div id="color-section4" class="smooth-section"></div>
+    <div class="color-section color-section4 zoo-widget-style2">
+        <div class="row"><!-- vertical toy-kids menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-toy-kids"}}</div>
+            <!--end  vertical toy-kids menu-->
+            <div></div>
+            <!-- slideshow toy-kids -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowtoy-kids-home09"}}<!-- end slideshow toy-kids --> <!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Toy Kids" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="3" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="collections" collections="random,latest" category_ids="210,209,208,207,206,205,204,202" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }} <!-- End Tab product  --></div>
+    </div>
+    <div></div>
+    <!-- Logo Brand -->
+    <div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/1.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/2.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/3.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/4.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/kids/5.jpg" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" autoplaytime="5" enable_nav="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>"nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
+    <!-- End Logo Brand -->
+    <div></div>
+    <div id="color-section5" class="smooth-section"></div>
+    <div class="color-section color-section5 zoo-widget-style2">
+        <div class="row"><!-- vertical electronic menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-electronic"}}</div>
+            <!--end  vertical electronic menu-->
+            <div></div>
+            <!-- slideshow electronic --> {{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowelectronic-home09"}}<!-- end slideshow electronic -->
+            <div></div>
+            <!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Electronic" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="3" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="collections" collections="random,latest" category_ids="190" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }} <!-- End Tab product  --></div>
+    </div>
+    <div></div>
+    <!-- Logo Brand -->
+    <div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/1.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/2.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/3.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/4.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/5.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/6.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/7.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/electronic/8.jpg" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" autoplaytime="5" enable_nav="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>"nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
+    <!-- End Logo Brand -->
+    <div></div>
+    <div id="color-section6" class="smooth-section"></div>
+    <div class="color-section color-section6 zoo-widget-style1">
+        <div class="row"><!-- vertical sport menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-sport"}}</div>
+            <!--end  vertical sport menu-->
+            <div></div>
+            <!-- slideshow sport -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowsport-home09"}}<!-- end slideshow sport -->
+            <div></div>
+            <!-- sport product -->
+            <div class="box-product-grid padding-0 col-md-9 col-lg-6">
+                <div class="product-gird-left padding-0 col-sm-8">{{widget classes="product-gird-left-bottom tab-style2" widget_title="Sport" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="2" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="none" category_ids="191" template="widget/product.phtml" limit="4" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }}</div>
+                {{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="col-sm-4 product-gird-right padding-0 hidden-xs"  vnumber_item="5"  brands="demo,demo,demo,demo,demo,demo,demo,demo,demo,demo" linkto=",,,,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/1.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/2.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/3.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/4.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/5.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/6.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/7.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/8.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/9.jpg,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/sport/10.jpg" layoutwg="vertical" vautoplay="0" autoplaytime="5" vnavigation_prev="<span class='clever-icon-up'></span>" vnavigation_next="<span class='clever-icon-down'></span>"}}</div>
+            <!-- End sport product  --></div>
+    </div>
+    <div></div>
+    <div id="color-section7" class="smooth-section"></div>
+    <div class="color-section color-section7 zoo-widget-style2">
+        <div class="row"><!-- vertical pet menu-->
+            <div class="vertical-menu-category col-md-3 col-lg-2 hidden-xs hidden-sm padding-0">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home09-pet"}}</div>
+            <!--end  vertical pet menu-->
+            <div></div>
+            <!-- slideshow pet -->{{widget type="CleverSoft\CleverSlider\Block\Widget\Slideshow" slider="slideshowpet-home09"}}<!-- end slideshow pet -->
+            <div></div>
+            <!-- Tab product --> {{widget classes="tab-style2 box-product-grid col-md-9 col-lg-6 padding-0" widget_title="Pet" type="CleverSoft\CleverProduct\Block\Widget" layout="grid" column_grid="3" image_width="300" image_height="300" lazyload="1" height_image="212" widget_tab="collections" collections="random,latest" category_ids="192" template="widget/product.phtml" labels="New Arrivals||Best Sellers" limit="6" product_m_w="180px" product_grid_style="product_grid_style_8"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_swatch_attributes="remove" display_productname="visible" display_name_single_line="visible" display_price="visible" }} <!-- End Tab product  --></div>
+    </div>
+    <!-- Logo Brand -->
+    <div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" customclass="zoo-widget-style1 carousel-home-9 logo-brand" brands="demo,demo,demo,demo,demo,demo" linkto=",,,,,,," img="http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/1.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/2.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/3.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/4.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/5.png,http://192.168.1.32/novetty_bk/pub/media/wysiwyg/images/home09/logobrand/pets/6.png" layoutwg="carousel" height_image="85" autoplay="1" hoverpause="1" enable_nav="1" autoplaytime="5" nbi480="2" nbi768="3" nbi990="4" nbi1200="5"}}</div>
+    <!-- End Logo Brand -->
+    <div></div>
+    <!-- Service Block-->
+    <div>{{widget type="CleverSoft\CleverBlock\Block\Widget" classes="service-block-home09 hidden-xs" block_ids="19" enable_fullwidth="1" block_lg="19,12," block_md="19,12," block_sm="19,12," block_xs="19,12," template="widget/block.phtml"}}</div>
+    <!-- End Service Block-->
+    <div></div>
+    <!-- vertical menu onepage -->
+    <div class="vertical-menu-one-page">{{widget type="CleverSoft\CleverMegaMenus\Block\Widget\Megamenu" menu="home-09-vertical-menu-one-page"}}</div>
+    <!--end  vertical menu onepage --></div>]]></content>
       <is_active>1</is_active>
       <page_layout>1column</page_layout>
       <stores>0</stores>
@@ -800,7 +793,7 @@
 <!-- End Image Block 2-->
 <div></div>
 <!-- New Arrivals -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="zoo-title-style1 title-font-playfair" widget_title="New Arrivals"  layout="carousel" widget_tab="none" mode="latest" image_width="350" category_ids="194,196,199,195,186,187,193" template="widget/product.phtml" labels="10" limit="4" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="zoo-title-style1 title-font-playfair" widget_title="New Arrivals"  layout="carousel" widget_tab="none" mode="latest" image_width="350" category_ids="194,196,199,195,186,187,193" template="widget/product.phtml" labels="10" limit="6" autoplaytimeout="5000" navigation="1" navigation_prev="<i class='clever-icon-prev'></i>" navigation_next="<i class='clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" product_grid_style="product_grid_style_2" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals-->
 <div></div>
 <!-- Content Newsletter-->
@@ -822,7 +815,7 @@
 <!-- end slideshow-->
 <div></div>
 <!-- New Arrivals-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0" widget_title="New Arrivals" layout="grid" widget_tab="none" mode="latest" category_ids="256" template="widget/product.phtml" labels="10" limit="8" column_grid="4" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0" widget_title="New Arrivals" layout="grid" widget_tab="none" mode="latest" category_ids="256" template="widget/product.phtml" labels="10" limit="8" column_grid="4" product_grid_style="product_grid_style_3" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End New Arrivals -->
 <div></div>
 <!-- Image Parallax-->
@@ -830,7 +823,7 @@
 <!-- End Image Parallax-->
 <div></div>
 <!-- Featured Products -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="new" category_ids="256" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="5" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="new" category_ids="256" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="5" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0" product_grid_style="product_grid_style_3" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End Featured Products -->]]></content>
       <is_active>1</is_active>
       <page_layout>1column</page_layout>
@@ -844,7 +837,7 @@
 <!-- end slideshow-->
 <div></div>
 <!-- New Arrivals-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0 zoo-title-color-white zoo-widget-transparent" widget_title="New Arrivals" layout="grid" widget_tab="none" mode="latest" category_ids="198" template="widget/product.phtml" labels="10" limit="8" column_grid="4" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0 zoo-title-color-white zoo-widget-transparent" widget_title="New Arrivals" layout="grid" widget_tab="none" mode="latest" category_ids="198" template="widget/product.phtml" labels="10" limit="8" column_grid="4" product_grid_style="product_grid_style_4"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="1" aspect_ratio="1" image_width="270"}}</div>
 <!-- End New Arrivals -->
 <div></div>
 <!-- Block content -->
@@ -852,7 +845,7 @@
 <!-- End Block content-->
 <div></div>
 <!-- Featured Products -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="new" category_ids="198" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="5" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0 zoo-title-color-white zoo-widget-transparent" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="new" category_ids="198" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="5" classes="title-font-playfair zoo-title-size2 zoo-widget-style1 zoo-title-style1 zoo-title-border-0 zoo-title-color-white zoo-widget-transparent" product_grid_style="product_grid_style_4"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="1"}}</div>
 <!-- End Featured Products -->]]></content>
       <is_active>1</is_active>
       <page_layout>1column</page_layout>
@@ -870,8 +863,7 @@
 <div class="featured-products">
 <h3 class="title">Featured Products</h3>
 </div>
-{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="250,253,198" template="widget/product.phtml"  limit="8"  image_width="300" image_height="400" classes="zoo-widget-style1 zoo-widget-tab-style1" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}} 
-<!-- End Product tab -->
+{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="250,253,198" template="widget/product.phtml"  limit="8"  image_width="300" image_height="400" classes="zoo-widget-style1 zoo-widget-tab-style1" product_grid_style="product_grid_style_5" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}} <!-- End Product tab -->
 <div></div>
 <!-- Subscribe  -->
 <div>{{widget type="CleverSoft\CleverBlock\Block\Widget" classes="newsletters-home15" enable_fullwidth="1" block_ids="151" block_lg="151,12," block_md="151,12," block_sm="151,12," block_xs="151,12," template="widget/block.phtml"}}</div>
@@ -892,7 +884,7 @@
 <div class="featured-products">
 <h3 class="title">Featured Products</h3>
 </div>
-{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="254,54,31" template="widget/product.phtml"  limit="8"  image_width="300" image_height="300" classes="zoo-widget-style1 zoo-widget-tab-style1" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="254,54,31" template="widget/product.phtml"  limit="8"  image_width="300" image_height="300" classes="zoo-widget-style1 zoo-widget-tab-style1" product_grid_style="product_grid_style_6" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End Product tab -->
 <div></div>
 <!-- Testimonial-->
@@ -916,18 +908,18 @@
 <div class="col-sm-3">
 <div></div>
 <!-- sale products -->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="sale products" layout="carousel" widget_tab="none" mode="latest" category_ids="201,203,208" template="widget/product.phtml" labels="" limit="6" autoplaytimeout="5000" enable_bullet="1" enable_loop="1" col_480="1" col_768="1" col_992="1" column="1" classes="zoo-widget-style2 bg-home17" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="sale products" layout="carousel" widget_tab="none" mode="latest" category_ids="201,203,208" template="widget/product.phtml" labels="" limit="6" autoplaytimeout="5000" enable_bullet="1" enable_loop="1" col_480="1" col_768="1" col_992="1" column="1" classes="zoo-widget-style2 bg-home17" product_grid_style="product_grid_style_7"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End sale products -->
 <div></div>
 <!-- Newsletter block -->
 <div>{{widget type="CleverSoft\CleverBlock\Block\Widget" classes="zoo-widget-style2" block_ids="45" block_lg="45,12," block_md="45,12," block_sm="45,12," block_xs="45,12," template="widget/block.phtml"}}</div>
 <!-- End Newsletter block -->
 <div></div>
-<!-- Best sellers --> {{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Best sellers" layout="carousel-vertical" widget_tab="none" mode="random" template="widget/product.phtml" category_ids="201,203,208" labels="10" limit="4" vertical_items="6" display_rating="visible" display_addtocart="remove" display_addtowishlist="visible" display_addtocompare="visible" display_swatch_attributes="visible" display_productname="visible" display_price="visible" display_name_single_line="1" addtolinks_position="1" aspect_ratio="1" image_width="90" image_height="90" classes="bg-home17"}} <!-- End Best sellers --></div>
+<!-- Best sellers --> {{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Best sellers" layout="carousel-vertical" widget_tab="none" mode="random" template="widget/product.phtml" category_ids="201,203,208" labels="10" limit="4" vertical_items="6" product_grid_style="product_grid_style_7"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="visible" display_swatch_attributes="visible" display_productname="visible" display_price="visible" display_name_single_line="1" addtolinks_position="1" aspect_ratio="1" image_width="90" image_height="90" classes="bg-home17"}} <!-- End Best sellers --></div>
 <div class="col-sm-9"><!-- Product tab -->
 <div class="bg-home17 zoo-widget-style2">
 <h3 class="title">New Arrivals</h3>
-{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="201,203,208" template="widget/product.phtml"  limit="8"  image_width="300" image_height="400" classes="zoo-widget-tab-style2" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+{{widget type="CleverSoft\CleverProduct\Block\Widget" layout="grid" widget_tab="categories" category_ids="201,203,208" template="widget/product.phtml"  limit="8"  image_width="300" image_height="400" classes="zoo-widget-tab-style2" product_grid_style="product_grid_style_7"  display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- Image block -->
 <div>{{widget type="CleverSoft\CleverBlock\Block\Widget" classes="zoo-widget-style2" block_ids="159" block_lg="159,12," block_md="159,12," block_sm="159,12," block_xs="159,12," template="widget/block.phtml"}}</div>
 <!-- End Image block -->
@@ -935,11 +927,11 @@
 <!-- End Product tab -->
 <div></div>
 <!-- Featured Products-->
-<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="latest" category_ids="201,203,208" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" classes="bg-home17 zoo-widget-style2" display_rating="visible" display_addtocart="hover" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
+<div>{{widget type="CleverSoft\CleverProduct\Block\Widget" widget_title="Featured Products" layout="carousel" widget_tab="none" mode="latest" category_ids="201,203,208" template="widget/product.phtml" labels="10" limit="10" autoplay="1" autoplayhoverpause="1" autoplaytimeout="3000" navigation="1" navigation_prev="<i class=' clever-icon-prev'></i>" navigation_next="<i class=' clever-icon-next'></i>" col_480="2" col_768="3" col_992="4" column="4" classes="bg-home17 zoo-widget-style2" product_grid_style="product_grid_style_7" display_rating="visible" display_addtocart="visible" display_addtowishlist="visible" display_addtocompare="remove" display_size="visible" display_color="remove" display_productname="visible" display_name_single_line="visible" display_price="visible"  addtolinks_position="0"}}</div>
 <!-- End Featured Products --></div>
 </div>
 <div>{{widget type="CleverSoft\CleverBlock\Block\Widget" classes="zoo-widget-style2 home17-banner3" block_ids="158" block_lg="158,12," block_md="158,12," block_sm="158,12," block_xs="158,12," template="widget/block.phtml"}}</div>
-<div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" brands="demo,demo,demo,demo,demo,demo" linkto=",,,,," img="wysiwyg/images/home17/img-brand-1.jpg,wysiwyg/images/home17/img-brand-2.jpg,wysiwyg/images/home17/img-brand-3.jpg,wysiwyg/images/home17/img-brand-4.jpg,wysiwyg/images/home17/img-brand-5.jpg,wysiwyg/images/home17/img-brand-6.jpg" layoutwg="carousel" autoplay="1" autoplaytime="5" nbi480="2" nbi768="3" nbi990="4" nbi1200="6" customclass="6" customclass="brand-home17"}}</div> ]]></content>
+<div>{{widget type="CleverSoft\CleverBrands\Block\Widget\Adminhtml\Brands" brands="demo,demo,demo,demo,demo,demo" linkto=",,,,," img="wysiwyg/images/home17/img-brand-1.jpg,wysiwyg/images/home17/img-brand-2.jpg,wysiwyg/images/home17/img-brand-3.jpg,wysiwyg/images/home17/img-brand-4.jpg,wysiwyg/images/home17/img-brand-5.jpg,wysiwyg/images/home17/img-brand-6.jpg" layoutwg="carousel" autoplay="1" autoplaytime="5" nbi480="2" nbi768="3" nbi990="4" nbi1200="6" customclass="6" customclass="brand-home17"}}</div>]]></content>
       <is_active>1</is_active>
       <page_layout>1column</page_layout>
       <stores>0</stores>

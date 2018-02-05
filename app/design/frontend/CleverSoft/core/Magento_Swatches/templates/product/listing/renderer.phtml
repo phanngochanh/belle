@@ -9,6 +9,11 @@
      data-mage-init='{"cleverSwatchRenderer":{
                     "selectorProduct":".product-item-details",
                     "onlySwatches":"true",
+                    "classes": {
+                            "attributeClass": "swatch-attribute",
+                            "attributeInput": "swatch-input",
+                            "optionClass": "swatch-option"
+                    },
                     "equalHeightConfig":<?php echo $this->helper('CleverSoft\Base\Helper\Data')->getCfg('category_grid/equal_height') ?  'true' : 'false' ?>,
                     "enableControlLabel":"false",
                     "numberToShow":"<?php /* @escapeNotVerified */ echo $block->getNumberSwatchesPerProduct(); ?>",
@@ -16,4 +21,4 @@
                     "jsonSwatchConfig":<?php /* @escapeNotVerified */ echo $block->getJsonSwatchConfig(); ?>,
                     "mediaCallback":"<?php /* @escapeNotVerified */ echo $block->getMediaCallback(); ?>"
                 }}'
-></div>
+    ></div>

@@ -120,6 +120,7 @@ $brandloop = $this->getData('brand_loop') == '1' ? 'true' : 'false';
 
 <script>
     require(["jquery","jQueryLibMin", "CleverSoft_CleverBrands/js/jquery.bxslider"], function ($) {
+        $(function () {
         <?php
         if($this->getData('layoutwg') == 'carousel'):
         ?>
@@ -133,7 +134,7 @@ $brandloop = $this->getData('brand_loop') == '1' ? 'true' : 'false';
             });
             $('#cat-carousel .owlslider').css('width', '100%');
         <?php } ?>
-        $(function () {
+        // $(function () {
             if ('<?php echo $this->getData('layoutwg'); ?>' == 'carousel') {
                 var $container = $("#brands-carousel .owl-carousel");
                 $container.owlCarousel({
@@ -176,7 +177,7 @@ $brandloop = $this->getData('brand_loop') == '1' ? 'true' : 'false';
                 <?php } ?>
             }
 
-        });
+        // });
         <?php elseif($this->getData('layoutwg') == 'grid'): ?>
             <?php if($block->getData('enable_fullwidth')) { ?>
                 var $left = $('#brands-carousel').offset().left;
@@ -188,7 +189,7 @@ $brandloop = $this->getData('brand_loop') == '1' ? 'true' : 'false';
                 });
                 $('#cat-carousel .owlslider').css('width', '100%');
             <?php } ?>
-        $(function () {
+        // $(function () {
             var imgwidth = 0;
             if ('<?php echo $this->getData('layoutwg'); ?>' == 'grid') {
                 imgwidth = <?php echo $this->getData('imgwidth') ? $this->getData('imgwidth') : 0; ?>;
@@ -196,10 +197,10 @@ $brandloop = $this->getData('brand_loop') == '1' ? 'true' : 'false';
                     $(".grid-brands img.img-brand").width(imgwidth);
                 }
             }
-        });
+        // });
         <?php else: ?>
         $("ul.vertical-brands > li").css("margin-bottom", "0rem");
-        $(window).load(function () {
+        // $(function () {
             var page = 0;
             var maxSlides = <?php echo $vnumber_item; ?>;
             var slider = $('ul.<?php echo $class_random ?>').bxSlider({
@@ -240,7 +241,8 @@ $brandloop = $this->getData('brand_loop') == '1' ? 'true' : 'false';
                 }
                 <?php endif; ?>
             });
-        });
+        // });
         <?php endif; ?>
+        });
     });
 </script>

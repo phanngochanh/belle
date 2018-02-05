@@ -1,12 +1,13 @@
 define([
     'jquery',
+    'mage/translate',
     'underscore',
     'jquery/ui',
     'jquery/jquery.parsequery',
     "fotoramaVideoEvents",
     "Magento_Swatches/js/swatch-renderer",
     'jQueryLibMin'
-], function ($) {
+], function ($,$t) {
     'use strict';
     /* set Height for element */
     $.widget('mage.cleverInnerZoom', {
@@ -266,11 +267,30 @@ define([
             equalHeightConfig: false
         },
         /*
+         * call init function from parent and make some changes
+         */
+        _init: function () {
+            var $widget = this;
+            var $_init = this._super();
+            $.when.apply( null, $_init ).done(function() {
+                $widget.element.find("." + $widget.options.classes.attributeClass).slice(1).css({'height':0,'overflow':'hidden'});
+                if( $widget.options.equalHeightConfig) {
+                    if($widget.element.closest('.trigger-equal-height').length > 0) {
+                        $widget._updateHeightOnCatalogListing($widget.element.closest('.trigger-equal-height'));
+                    }
+                }
+            });
+            if ($widget.element.find("." + $widget.options.classes.attributeClass).length > 0) {
+                $widget.element.closest('.product-item-info').find('.action.tocart span').text($t('Select Options'));
+            }
+        },
+
+        /*
          * update for all product items if "equal height" option enabled
          */
-        _updateHeightOnCatalogListing: function () {
-            if($('#zoo-product-listing').length > 0 ) {
-                $('#zoo-product-listing').attr('data-mage-init', JSON.stringify({'equalHeight': {'target': ' .product-item .product-item-info'}})).trigger('contentUpdated');
+        _updateHeightOnCatalogListing: function ($selector) {
+            if($($selector).length > 0 ) {
+                $($selector).attr('data-mage-init', JSON.stringify({'equalHeight': {'target': ' .product-item-info'}})).trigger('contentUpdated');
             }
         },
 
@@ -395,8 +415,8 @@ define([
             }
 
             if (_.size($widget) < 1 || !support(response)) {
-                this.updateBaseImage(this.options.mediaGalleryInitial, $main, isProductViewExist);
-
+                var $promise = this.updateBaseImage(this.options.mediaGalleryInitial, $main, isProductViewExist);
+                $.when.apply(null, $promise).done($widget.changeButtonCartText());
                 return;
             }
 
@@ -424,7 +444,24 @@ define([
                 });
             }
 
-            this.updateBaseImage(images, $main, isProductViewExist);
+            var $promise = this.updateBaseImage(images, $main, isProductViewExist);
+            $.when.apply(null, $promise).done($widget.changeButtonCartText());
+        },
+
+        /*
+         * change the text from select options to add to cart if every option is selected.
+         */
+        changeButtonCartText: function() {
+            var $widget = this;
+            var $options = $widget.element.find("." + $widget.options.classes.attributeClass);
+            var $show = true ;
+            $options.each(function(){
+                if($(this).find('.' + $widget.options.classes.optionClass + '.selected').length == 0) {
+                    $show = false;
+                    return false;
+                }
+            })
+            if($show) $widget.element.closest('.product-item-info').find('.action.tocart span').text($t('Add To Cart'));
         },
 
         /**
@@ -483,7 +520,7 @@ define([
                     },
                     waitForAll: true
                 }).done(function() {
-                    $(this).closest('.trigger-equal-height').attr('data-mage-init', JSON.stringify({'equalHeight': {'target': ' .product-item .product-item-info'}}));
+                    $(this).closest('.trigger-equal-height').attr('data-mage-init', JSON.stringify({'equalHeight': {'target': ' .product-item-info'}}));
                     $(this).closest('.trigger-equal-height').trigger('contentUpdated');
                 });
             }
@@ -502,7 +539,7 @@ define([
 
                 $.cleversoft.cleverBaseUpdateImageAndVideo(options);
             }
-            if(this.options.equalHeightConfig) this._updateHeightOnCatalogListing();
+            if(this.options.equalHeightConfig) this._updateHeightOnCatalogListing('#zoo-product-listing');
         }
     });
 

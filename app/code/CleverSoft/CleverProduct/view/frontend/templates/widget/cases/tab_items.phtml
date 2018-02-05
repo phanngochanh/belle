@@ -125,7 +125,7 @@ if (!empty($icon)) {
                                 <?php else : ?>
                                     <div class="stock unavailable"><span><?php /* @escapeNotVerified */
                                             echo __('Out of stock') ?></span></div>
-                                <?php endif; ?> 
+                                <?php endif; ?>
                                 <a href="<?php /* @escapeNotVerified */
                                 echo $block->getProductUrl($_item) ?>"
                                    class="product-item-photo" <?php if ($lazyload) echo 'style="min-height: ' . $min_height_img_lazyload . 'px"' ?> >
@@ -179,7 +179,7 @@ if (!empty($icon)) {
                                             class="product_after_shop_loop_price <?php echo 'product_' . $showPrice . '_item'; ?>">
                                             <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
                                         </div>
-                                    <?php endif; ?> 
+                                    <?php endif; ?>
                                         <div class="add-to-links">
                                             <?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist != 'remove'): ?>
                                                 <div class=""
@@ -202,7 +202,7 @@ if (!empty($icon)) {
                                                     </a>
                                                 </div>
                                             <?php endif; ?>
-                                        </div> 
+                                        </div>
                                 </div>
                                 <?php if ($showSwatchAttributes != 'remove'): ?>
                                     <div class="<?php echo 'product_' . $showSwatchAttributes . '_item'; ?>" >
@@ -285,6 +285,13 @@ if (!empty($icon)) {
         </div>
     <?php
     } else {
+
+        $dataHelpder = $this->helper('CleverSoft\CleverProduct\Helper\Data');
+        //get configurations for countdown area
+        $countdown_label = $block->getData('countdown_label');
+        $countdown_position = $block->getData('countdown_position'); /// over feature image or in product metadata.
+        $enable_progress_bar = $block->getData('enable_progress_bar');
+
         $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
         $description = false;
         $_helper = $this->helper('Magento\Catalog\Helper\Output');
@@ -312,6 +319,11 @@ if (!empty($icon)) {
             echo $type; ?>  <?php if ($itemgridClasses) echo $itemgridClasses; ?>">
                 <?php $i = 0;
                 foreach ($items as $_item): ?>
+                    <?php
+                    //this is how we get the data for showing progress bar
+                    $stock = $dataHelpder->getStockQty($_item->getID()); /// available amount
+                    $order = $dataHelpder->getOrderedQuantity($_item->getID());//sold amount
+                    ?>
                     <?php /* @escapeNotVerified */
                     echo '<!-- ' . $image . '-->' ?>
                     <?php $i++ ?>
@@ -325,8 +337,7 @@ if (!empty($icon)) {
                             <div class="zoo-inner-product-item-info">
                                 <div class="zoo-product-image">
 
-                                    <?php if ($product_grid_style == 'product_grid_style_2' || $product_grid_style == 'product_grid_style_3' || $product_grid_style == 'product_grid_style_4' || $product_grid_style == 'product_grid_style_5' || $product_grid_style == 'product_grid_style_6' || $product_grid_style == 'product_grid_style_7'):?>
-                                        <div class="add-to-link">
+                                    <div class="add-to-link">
                                             <?php if ( $product_grid_style != 'product_grid_style_4' && $product_grid_style != 'product_grid_style_5' && $product_grid_style != 'product_grid_style_7'): ?>
                                                 <?php if ($showCart != 'remove'): ?>
                                                     <div class="actions-primary zoo-addtocart">
@@ -342,7 +353,7 @@ if (!empty($icon)) {
                                                                        value="<?php /* @escapeNotVerified */
                                                                        echo $postParams['data'][Action::PARAM_NAME_URL_ENCODED]; ?>">
                                                                 <?php echo $block->getBlockHtml('formkey') ?>
-                                                                <button type="submit" class="action tocart"><span><i class="cs-font clever-icon-cart-10"></i></span> <span class="tooltip"><?php echo __('Add to Cart') ?></span></button>
+                                                                <button type="submit" class="action tocart"><i class="cs-font clever-icon-cart-10"></i><span class="tooltip"><?php echo __('Add to Cart') ?></span></button>
                                                             </form>
 
                                                         <?php endif; ?>
@@ -377,7 +388,6 @@ if (!empty($icon)) {
                                                 </div>
                                             <?php endif; ?>
                                         </div>
-                                    <?php endif; ?>
                                     <?php if ($_item->getIsSalable()): echo $theme->getLabel($_item); ?>
                                     <?php else : ?>
                                         <div class="stock unavailable"><span><?php /* @escapeNotVerified */
@@ -428,7 +438,7 @@ if (!empty($icon)) {
                                          </span>
                                         <?php endif; ?>
                                     </a>
-                                    <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7'):?>
+                                    <?php if ( $product_grid_style == 'product_grid_style_7'):?>
                                         <?php if ($theme->getCfg('product_quickview/enable')) : ?>
                                             <div class="zoo-quickview">
                                                 <span class="cs-font clever-icon-quickview-5"> </span>
@@ -443,7 +453,25 @@ if (!empty($icon)) {
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <div class="product-date"  data-date="<?php echo $this->helper('CleverSoft\CleverProduct\Helper\Data')->getDate($_item) ?>"></div>
+                                    <?php if($block->getData('enable_countdown')) : ?>
+                                        <?php if($countdown_position == 'over_feature_img' ) : ?>
+                                            <div class="clever-countdown <?php echo $countdown_position; ?>">
+                                                <?php if($enable_progress_bar) : ?>
+                                                    <div class="clever-countdown-progress-bar" >
+                                                        <div class="available-sold" style="width: <?php echo (($order/($order+$stock)))*100 ?>%"></div>
+                                                    </div>
+                                                    <div class="clever-countdown-amount">
+                                                        <span class="clever-countdown-available-amount "> <?php echo __('Sold:') ?><span><?php echo $order; ?></span></span>
+                                                        <span class="clever-countdown-ordered-amount "><?php echo __('Available:') ?> <?php echo $stock; ?></span>
+                                                    </div>
+                                                <?php endif; ?>
+                                                <?php if(!empty($countdown_label)) {  ?>
+                                                    <div class="clever-countdown-label"><?php echo $countdown_label; ?></div>
+                                                <?php } ?>
+                                                <div class="product-date"  data-date="<?php echo $this->helper('CleverSoft\CleverProduct\Helper\Data')->getDate($_item) ?>"></div>
+                                            </div>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
                                     <?php if ($product_grid_style == 'product_grid_style_5'): ?>
                                         <div class="add-to-cart-button">
                                             <?php if ($showCart != 'remove'): ?>
@@ -475,38 +503,6 @@ if (!empty($icon)) {
                                     <?php endif; ?>
                                 </div>
                                 <div class="product details product-item-details">
-                                    <div class="shop_product_metas">
-                                        <?php if ($product_grid_style == 'product_grid_style_1'):?>
-                                            <?php if ($showPrice != 'remove'): ?>
-                                                <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
-                                            <?php endif; ?>
-                                        <?php endif; ?>
-                                        <?php if ($product_grid_style == 'product_grid_style_1'):?>
-                                            <div class="add-to-links">
-                                                <?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist != 'remove'): ?>
-                                                    <div class=""
-                                                         data-role="add-to-links">
-                                                        <a href="#" data-post='<?php /* @escapeNotVerified */
-                                                        echo $block->getAddToWishlistParams($_item); ?>'
-                                                           data-action="add-to-wishlist" title="">
-                                                            <i class="cs-font clever-icon-heart-o"></i>
-                                                        </a>
-                                                    </div>
-                                                <?php endif; ?>
-                                                <?php if ($block->getAddToCompareUrl() && $showCompare != 'remove'): ?>
-                                                    <div class=""
-                                                         data-role="add-to-links">
-                                                        <?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?>
-                                                        <a href="#" class="action tocompare"
-                                                           data-post='<?php /* @escapeNotVerified */
-                                                           echo $compareHelper->getPostDataParams($_item); ?>'>
-                                                            <span class="cs-font clever-icon-reload"></span>
-                                                        </a>
-                                                    </div>
-                                                <?php endif; ?>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
 
                                     <div class="hover-area product_shop_loop">
                                         <?php if ($showProductName != 'remove'): ?>
@@ -520,7 +516,7 @@ if (!empty($icon)) {
                                             </h5>
                                         <?php endif; ?>
 
-                                        <?php if ($product_grid_style == 'product_grid_style_1' || $product_grid_style == 'product_grid_style_7') :?>
+                                        <?php if ( $product_grid_style == 'product_grid_style_7') :?>
                                             <?php if ($showCart != 'remove'): ?>
                                                 <div class="actions-primary">
                                                     <?php if ($_item->isSaleable()): ?>
@@ -582,22 +578,36 @@ if (!empty($icon)) {
                                             </div>
                                         <?php endif; ?>
 
-                                        <?php if ($product_grid_style != 'product_grid_style_1'):?>
+
                                             <?php if ($templateType && $showRating != 'remove'): ?>
                                                 <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
                                             <?php endif; ?>
 
-                                            <?php if ($showPrice != 'remove' && $product_grid_style != 'product_grid_style_1' && $product_grid_style != 'product_grid_style_4') : ?>
+                                            <?php if ($showPrice != 'remove'  && $product_grid_style != 'product_grid_style_4') : ?>
                                                 <?php echo $block->getProductPriceHtml($_item, \Magento\Catalog\Pricing\Price\FinalPrice::PRICE_CODE); ?>
                                             <?php endif; ?>
-                                        <?php endif; ?>
-                                    </div>
 
-                                    <?php if ($product_grid_style == 'product_grid_style_1'):?>
-                                        <?php if ($templateType && $showRating != 'remove'): ?>
-                                            <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
+                                    </div>
+                                    <?php if($block->getData('enable_countdown')) : ?>
+                                        <?php if($countdown_position == 'product_metadata' ) : ?>
+                                            <div class="clever-countdown <?php echo $countdown_position; ?>">
+                                                <?php if($enable_progress_bar) : ?>
+                                                    <div class="clever-countdown-progress-bar" >
+                                                        <div class="available-sold" style="width: <?php echo (($order/($order+$stock)))*100 ?>%"></div>
+                                                    </div>
+                                                    <div class="clever-countdown-amount">
+                                                        <span class="clever-countdown-available-amount "> <?php echo __('Sold:') ?><span><?php echo $order; ?></span></span>
+                                                        <span class="clever-countdown-ordered-amount "><?php echo __('Available:') ?> <?php echo $stock; ?></span>
+                                                    </div>
+                                                <?php endif; ?>
+                                                <?php if(!empty($countdown_label)) {  ?>
+                                                    <div class="clever-countdown-label"><?php echo $countdown_label; ?></div>
+                                                <?php } ?>
+                                                <div class="product-date"  data-date="<?php echo $this->helper('CleverSoft\CleverProduct\Helper\Data')->getDate($_item) ?>"></div>
+                                            </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
+
                                     <?php if ($showSwatchAttributes != 'remove'): ?>
                                         <?php echo $block->getColorSwatchDetailsHtml($_item); ?>
                                     <?php endif; ?>
@@ -639,7 +649,7 @@ if (!empty($icon)) {
     {
         "#<?php echo $_id ?>": {
             "equalHeight": {
-                "target": " .product-item"
+                "target": " .product-item-info "
             }
         }
     }

@@ -128,7 +128,7 @@ define([
                 if ($('body').hasClass('show-sidebar')) {
                     $(' #zoo-main-content .columns').css('overflow', 'initial');
                     $(' #zoo-main-content .columns').css('z-index', 'auto');
-                    $(' #sidebar-without ').css('left', '0' );
+                    $(' #sidebar-without, #zoo-layer-navigation ').css('left', '0' );
                 } else {
                     shopSidebarWithoutLeftRight.removeAttr('style');
                 }
@@ -136,10 +136,12 @@ define([
             $('#sidebar-without .clever-icon-close').on('click', function (e) {
                 $('body').removeClass('show-sidebar');
                 shopSidebarWithoutLeftRight.removeAttr('style');
+                $( '#zoo-layer-navigation' ).removeAttr('style');
             });
             $('#sidebar-without .transparent-bg').on('click', function (e) {
                 $('body').removeClass('show-sidebar');
                 shopSidebarWithoutLeftRight.removeAttr('style');
+                $( '#zoo-layer-navigation' ).removeAttr('style');
             });
         }
     }
